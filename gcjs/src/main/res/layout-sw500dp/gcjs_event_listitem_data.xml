@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_project_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="济南市中山路万达广场建设审批"
+                android:textColor="@color/agmobile_black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:drawablePadding="@dimen/padding_5"
+                android:drawableRight="@mipmap/mine_right_arrow"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="4dp"
+                android:text="待处理"
+                android:textColor="@color/bpm_bg_state_tag"
+                android:textSize="16sp"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/padding_5"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/light_gray"/>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:visibility="gone"-->
+        <!--android:paddingBottom="@dimen/padding_5"-->
+        <!--android:paddingLeft="@dimen/padding_10"-->
+        <!--android:paddingRight="@dimen/padding_10"-->
+        <!--android:paddingTop="@dimen/padding_5">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:text="类型"-->
+        <!--android:textColor="@color/agmobile_text_caption"-->
+        <!--android:textSize="@dimen/sp_16"/>-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_project_type"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/padding_10"-->
+        <!--android:layout_weight="2"-->
+        <!--android:text="单项"-->
+        <!--android:textColor="@color/agmobile_black"-->
+        <!--android:textSize="@dimen/sp_16"/>-->
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="流水号"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_project_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text=""
+                android:textColor="@color/agmobile_black"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="处理时限"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_project_limit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="2"
+                android:text="剩余5天"
+                android:textColor="#36a3f7"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="申报来源"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="2"
+                android:text="窗口申报"
+                android:textColor="@color/agmobile_black"
+                android:textSize="@dimen/sp_16"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="申请人"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="2"
+                android:text="小晨"
+                android:textColor="@color/agmobile_black"
+                android:textSize="@dimen/sp_16"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_stage_describe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="申请阶段"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_project_stage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="施工许可"
+                android:textColor="@color/agmobile_black"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="当前环节名称"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_project_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="办结 ( 已受理 ) "
+                android:textColor="@color/agmobile_black"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="申报时间"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_project_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="2019-04-02 13:26:13"
+                android:textColor="@color/agmobile_black"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="环节承诺办结时间"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_project_finish_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="2019-04-02 13:26:13"
+                android:textColor="@color/agmobile_black"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="环节剩余时限"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_project_time_limit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="逾期8天"
+                android:textColor="@color/agmobile_blue"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/light_gray"/>
+
+
+</LinearLayout>

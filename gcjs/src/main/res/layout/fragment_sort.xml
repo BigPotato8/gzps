@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_sort">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/grey1">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:id="@+id/sort_text"
+            android:padding="10dp"
+            android:text="排序方式:"
+            android:textColor="#02A7F0"
+            android:textSize="14sp"/>
+        <ImageView
+            android:id="@+id/sort_dowm"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/down_arrow"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/time_text"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/sort_dowm"
+            android:text="环节剩余时间"
+            android:textColor="#02A7F0"
+            android:textSize="14sp"/>
+
+        <!--<ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/sort_up"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:layout_toEndOf="@+id/time_text"
+            android:layout_toRightOf="@+id/time_text"
+            android:src="@mipmap/up_arrow"
+            android:visibility="gone"/>-->
+    </RelativeLayout>
+</LinearLayout>

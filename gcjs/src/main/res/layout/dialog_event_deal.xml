@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F3F8"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPadBlue"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_flow_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="下一环节及审批人"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/widget_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="3dp"
+                    android:gravity="center_vertical|right"
+                    android:text="下一环节："
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <com.augurit.agmobile.common.view.combineview.AGFlowCheck
+                    android:id="@+id/flow_step"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                </com.augurit.agmobile.common.view.combineview.AGFlowCheck>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="3dp"
+                    android:gravity="center_vertical|right"
+                    android:text="审批人："
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <com.augurit.agmobile.common.view.combineview.AGFlowCheck
+                    android:id="@+id/flow_step_people"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                </com.augurit.agmobile.common.view.combineview.AGFlowCheck>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="办理结果及意见"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/widget_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="3dp"
+                    android:gravity="center_vertical|right"
+                    android:text="办理结果："
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <com.augurit.agmobile.common.view.combineview.AGFlowCheck
+                    android:id="@+id/flow_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                </com.augurit.agmobile.common.view.combineview.AGFlowCheck>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="3dp"
+                    android:gravity="right"
+                    android:text="办理意见："
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@drawable/bg_circle_10dp_gray"
+                    android:gravity="top|start"
+                    android:hint="请输入内容"
+                    android:inputType="textMultiLine"
+                    android:minHeight="120dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_toLeftOf="@+id/btn_send"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="取消"
+                android:background="@color/white"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_16"
+                />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="发送"
+                android:background="@color/colorPadBlue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

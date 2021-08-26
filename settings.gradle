@@ -1,0 +1,11 @@
+//include ':IMKit', ':IMLib', ':common',':nanning',':psh',':sewage',':flood',':pipeline', ':quality'
+include ':IMKit', ':IMLib', ':common'//, ':quality',':drainage',':flood',":psh"
+//include ':gcjs_public'
+include ':gcjs'
+//include ':agwater5'
+//include ':flood'
+//include ':drainage'
+//include ':psh'
+//include ':nanning'
+//include ':sewage'
+//include ':sample'

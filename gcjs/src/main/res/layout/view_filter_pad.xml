@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/agmobile_background">
+    <RelativeLayout
+        android:id="@+id/rl_filter_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/sv_filter_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/agmobile_black"
+            android:textStyle="bold"
+            android:text="筛选条件"
+            />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_close"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_filter_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/rl_filter_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/container_buttons">
+
+        <LinearLayout
+            android:id="@+id/view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:id="@+id/view_button_divider"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#dbd9d9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/container_buttons"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_btn_filter_reset"
+            android:text="@string/bpm_filter_reset"
+            android:textColor="#535353"
+            android:textSize="16sp"
+            android:layout_marginRight="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_finish"/>
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_btn_filter_confirm"
+            android:text="@string/bpm_next_info_btn_confirm"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_bg"
+    style="@style/WidgetRootViewStyle">
+
+    <include layout="@layout/view_divider_horizontal_with_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_left_container"
+            android:layout_width="@dimen/widget_key_container_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/WidgetKeyTextStyle"
+                tools:text="办结人办结人"
+                />
+
+            <TextView
+                android:id="@+id/tv_requiredTag"
+                style="@style/WidgetRequireTagStyle"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_content"
+                    style="@style/WidgetEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    tools:hint="请输入" />
+
+                <TextView
+                    android:maxWidth="130dp"
+                    android:id="@+id/tv_right_tag"
+                    style="@style/WidgetErrorTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/agmobile_text_tag"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/btn_more"
+                    style="@style/WidgetEditButtonStyle"
+                    android:layout_marginRight="@dimen/widget_spacing_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5.2dp"
+                    android:paddingRight="5.2dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_more"
+                        style="@style/WidgetEditButtonIconStyle" />
+
+                    <TextView
+                        android:id="@+id/tv_more"
+                        style="@style/WidgetEditButtonTextStyle" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_helpInfo"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingRight="6dp"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ico_gantanhao"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error"
+                style="@style/WidgetErrorTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_tip_tag"
+                style="@style/WidgetErrorTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/agmobile_text_tag"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.augurit.agmobile.common.view.widget.WEUIButton
+            android:id="@+id/btn_other_action"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="4dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="4dp"
+            app:buttonType="primary"
+            app:text="选择"
+            app:textSize="@dimen/sp_14"
+            android:visibility="gone"
+            />
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_helpInfo"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="4dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:paddingBottom="4dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_helpInfo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/wenhao"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,226 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/agmobile_background"
+              android:orientation="vertical">
+
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="false"
+        app:titleText="@string/menu_mine"
+
+        >
+
+    </com.augurit.agmobile.common.view.navigation.TitleBar>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_name_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/profile_bg_name_card"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/agmobile_all_spacing_horizontal"
+            android:layout_marginRight="@dimen/agmobile_all_spacing_horizontal"
+            android:layout_marginTop="@dimen/agmobile_all_spacing_horizontal"
+            android:scaleType="fitXY"
+            android:src="@mipmap/avatar_person_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:sriv_left_bottom_corner_radius="2dp"
+            app:sriv_left_top_corner_radius="2dp"
+            app:sriv_right_bottom_corner_radius="2dp"
+            app:sriv_right_top_corner_radius="2dp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/agmobile_all_spacing_horizontal"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/agmobile_text_body"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_avatar"
+            tools:text="黄立丰" />
+
+        <TextView
+            android:id="@+id/tv_org"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="@dimen/agmobile_all_spacing_horizontal"
+            android:textColor="@color/agmobile_text_tag"
+            android:textSize="@dimen/agmobile_text_body"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="镇级河长" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/my_sign"
+            android:visibility="gone"
+            style="@style/MineMenuContainer">
+
+            <ImageView
+                style="@style/MineMenuIcon"
+                android:src="@mipmap/sign" />
+
+            <TextView
+                style="@style/MineMenuText"
+                android:text="@string/mine_item_sign" />
+
+        </RelativeLayout>
+
+        <!--<View style="@style/MineMenuDivider" />-->
+
+        <RelativeLayout
+            android:visibility="gone"
+            style="@style/MineMenuContainer">
+
+            <ImageView
+                style="@style/MineMenuIcon"
+                android:src="@mipmap/mine_advise" />
+
+            <TextView
+                style="@style/MineMenuText"
+                android:text="@string/mine_item_collection" />
+
+        </RelativeLayout>
+
+        <!--<View style="@style/MineMenuDivider" />-->
+
+        <RelativeLayout
+            android:visibility="gone"
+            style="@style/MineMenuContainer">
+
+
+            <ImageView
+                style="@style/MineMenuIcon"
+                android:src="@mipmap/mine_reward" />
+
+            <TextView
+                style="@style/MineMenuText"
+                android:text="@string/mine_item_backlog" />
+
+        </RelativeLayout>
+
+        <!--<View style="@style/MineMenuDivider" />-->
+
+        <RelativeLayout
+            android:visibility="gone"
+            style="@style/MineMenuContainer">
+
+            <ImageView
+                style="@style/MineMenuIcon"
+                android:src="@mipmap/mine_trace" />
+
+            <TextView
+                style="@style/MineMenuText"
+                android:text="@string/mine_item_envelopes" />
+
+        </RelativeLayout>
+
+        <!--<View style="@style/MineMenuSpace" />-->
+
+        <RelativeLayout
+            android:id="@+id/rl_my_setting"
+            android:visibility="visible"
+            style="@style/MineMenuContainer">
+
+            <ImageView
+                style="@style/MineMenuIcon"
+                android:src="@mipmap/mine_problem" />
+
+            <TextView
+                style="@style/MineMenuText"
+                android:paddingRight="16dp"
+                android:text="@string/mine_item_setting" />
+
+            <!--
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mine_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+                -->
+
+        </RelativeLayout>
+
+        <View style="@style/MineMenuDivider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_exit"
+            style="@style/MineMenuContainer">
+
+            <ImageView
+                style="@style/MineMenuIcon"
+                android:layout_marginLeft="24dp"
+                android:src="@mipmap/menu_exit" />
+
+            <TextView
+                style="@style/MineMenuText"
+                android:text="@string/mine_item_exit" />
+
+            <!--
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mine_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+                -->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/MineMenuContainer"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/MineMenuIcon"
+                android:src="@mipmap/mine_upload" />
+
+            <TextView
+                style="@style/MineMenuText"
+                android:text="上报问题" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/agmobile_grey_0"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

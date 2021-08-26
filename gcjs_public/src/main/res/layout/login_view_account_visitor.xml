@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/jinan_login_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93"/>
+
+    <LinearLayout
+        android:id="@+id/btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/login_ic_back_light"/>
+    </LinearLayout>
+
+
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleText="工程建设登录"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:text="@string/login_welcome_title"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@+id/gl_left"
+        app:layout_constraintRight_toRightOf="@+id/gl_right"
+        app:layout_constraintTop_toTopOf="@+id/gl_title"/>
+
+    <TextView
+        android:id="@+id/tv_title_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="12.5dp"
+        android:text="@string/login_welcome_system"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="@+id/gl_left"
+        app:layout_constraintRight_toRightOf="@+id/gl_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/at_account"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/login_input_bg"
+        android:gravity="center_vertical"
+        android:hint="请输入帐号"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="52dp"
+        android:textColor="@color/agmobile_text_caption"
+        android:textColorHint="@color/agmobile_text_caption"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_system"
+        tools:text="账号输入"/>
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/login_user"
+        app:layout_constraintBottom_toBottomOf="@+id/at_account"
+        app:layout_constraintLeft_toLeftOf="@+id/at_account"
+        app:layout_constraintTop_toTopOf="@+id/at_account"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_input_bg"
+        android:gravity="center_vertical"
+        android:hint="请输入密码"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:paddingLeft="52dp"
+        android:textColor="@color/agmobile_text_caption"
+        android:textColorHint="@color/agmobile_text_caption"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/at_account"
+        tools:text="密码输入"/>
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/login_password"
+        app:layout_constraintBottom_toBottomOf="@+id/et_password"
+        app:layout_constraintLeft_toLeftOf="@+id/et_password"
+        app:layout_constraintTop_toTopOf="@+id/et_password"/>
+
+    <LinearLayout
+        android:id="@+id/ll_auto_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/et_password">
+
+        <CheckBox
+            android:id="@+id/cb_auto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/tv_auto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/login_login_auto"
+            android:textColor="@color/agmobile_accent"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/et_password">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:text="立即注册"
+            android:textColor="@color/agmobile_accent"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+    <com.augurit.agmobile.common.view.widget.WEUIButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        app:backgroundLoading="@drawable/login_btn_bg_loading"
+        app:backgroundNormal="@drawable/login_btn_bg"
+        app:buttonType="primary"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/ll_auto_login"
+        app:text="@string/login_login"
+        app:textLoading="@color/white"
+        app:textNormal="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/tv_find_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:text="找回密码"
+        android:textColor="@color/agmobile_accent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"/>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="温馨提示：若无账号或忘记密码，请前往办事大厅办理"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_left"/>
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:background="@mipmap/login_ic_setting_grey"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

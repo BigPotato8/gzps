@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'realm-android'
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'armeabi', 'x86', "armeabi-v7a"
+        }
+
+        //as3.0   flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+        flavorDimensions "versionCode"
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDir(['libs'])
+            res.srcDirs = ['src/main/res',
+                           'src/main/res/monitor',
+                           'src/main/res_override'  // 覆盖底层res，用于样式修改
+            ]
+        }
+    }
+    buildToolsVersion = '29.0.2'
+}
+
+dependencies {
+    api "com.android.support:appcompat-v7:$rootProject.ext.supportLibVersion"
+    api "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion"
+    //    api 'com.android.support.constraint:constraint-layout:1.1.2'
+    api "com.android.support:support-v4:$rootProject.ext.supportLibVersion"
+    implementation 'com.android.support:design:27.1.0'
+    //    implementation 'com.github.huburt-Hu:NewbieGuide:v2.4.0'
+    //    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.2'
+    //    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    testImplementation "com.android.support.test.espresso:espresso-core:$rootProject.ext.espressoCoreVersion"
+    api "com.augurit.agmobile:business-ui:$rootProject.ext.agmobileLibsVersion"
+    api "com.augurit.agmobile:business-bpm:$rootProject.ext.agmobileLibsVersion"
+    api "com.augurit.agmobile:lib-baidumap:$rootProject.ext.agmobileLibsVersion"
+    api "com.augurit.agmobile:lib-baiduvoice:$rootProject.ext.agmobileLibsVersion"
+    api("com.augurit.agmobile:lib-im:$rootProject.ext.agmobileLibsVersion") {
+        exclude group: 'com.belerweb', module: 'pinyin4j'
+    }
+    api 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.huangyanbin:SmartTable:2.2.0'
+    api project(':IMKit')
+    api project(':IMLib')
+    api files('libs/ksoap2-android-assembly-3.0.0-jar-with-dependencies.jar')
+    implementation files('libs/bcprov-jdk15on-1.61.jar')
+}

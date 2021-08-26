@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e9f3"
+    android:orientation="horizontal">
+
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#33415e"
+        android:elevation="6dp"
+        app:indicator_color="#169aff"
+        app:tab_height="60dp"
+        app:tab_mode="scrollable" />
+
+    <FrameLayout
+        android:id="@+id/fl_content_pad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

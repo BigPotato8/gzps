@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">agwater5</string>
+
+    <string name="search_bar_hint">Search for app、news and data</string>
+
+    <!--————————菜单—————————-->
+
+    <!--底栏-->
+    <string name="menu_mine">Me</string>
+
+    <!--防汛应急-->
+
+    <!--即时通讯-->
+    <string name="conversation">Chats</string>
+    <string name="friend_list">Contacts</string>
+    <string name="work_list">Teams</string>
+    <string name="im_no_friends">No Friends</string>
+    <string name="im_no_teams">No Teams</string>
+
+    <!--统计-->
+    <string name="install_statistic">Install Stats</string>
+    <string name="report_statistics">Report Stats</string>
+    <string name="sign_statistic">Check-in Stats</string>
+    <string name="statistic_app_title">Rate of Installation</string>
+    <string name="statistic_first_man">Staff</string>
+    <string name="statistic_manager">Manager</string>
+    <string name="statistic_total">Total</string>
+    <string name="statistic_installed">Installed</string>
+    <string name="statistic_unInstalled">UnInstalled</string>
+    <string name="statistic_position">Position:</string>
+    <string name="statistic_tel">Tel:</string>
+    <string name="statistic_organization">Org:</string>
+    <string name="statistic_report">Report Statistic</string>
+    <string name="statistic_device_type">Device Type</string>
+    <string name="statistic_times">Period Of Time</string>
+    <string name="statistic_to">To</string>
+    <string name="statistic_confirm">Confirm</string>
+    <string name="statistic_today">Today</string>
+    <string name="statistic_yesterday">Yesterday</string>
+    <string name="statistic_report_state">City data report today and yesterday</string>
+    <string name="statistic_sign">Sign Statistic</string>
+    <string name="statistic_signs_today">Signs Today</string>
+    <string name="statistic_signs_yesterday">Signs Yesterday</string>
+
+    <!--巡检-->
+
+    <string name="menu_data_report">Data Report</string>
+
+    <!--专栏-->
+
+    <!--上报概览-->
+    <string name="review_new">New</string>
+    <string name="review_check">Check</string>
+    <string name="review_total">Total</string>
+    <string name="review_doubt">Question</string>
+    <string name="review_pass">Pass</string>
+
+    <!--防汛调度-->
+
+    <!--日常工作-->
+
+    <!--————————功能分区标题—————————-->
+
+    <!--————————我的—————————-->
+    <string name="settings_menu_about">About</string>
+    <string name="settings_menu_my_org">My Company</string>
+    <string name="settings_menu_skin">Personalize</string>
+    <string name="settings_skin_default">Light-Blue</string>
+    <string name="settings_skin_green">Green</string>
+    <string name="settings_skin_night">Night View</string>
+    <string name="about_menu_check_update">Check Update</string>
+    <string name="about_caption_copyright_development">©2018 Augur Intelligence Technology</string>
+
+    <!--————————在线监测—————————-->
+
+    <!--————————提示信息—————————-->
+    <string name="message_loading">Loading...</string>
+    <string name="message_back">Back</string>
+
+    <!--————————排水巡检—————————-->
+
+    <!--————————数据上报—————————-->
+    <!--————————巡检日志—————————-->
+
+    <!--数据修补测-->
+
+    <!--————————事务公开—————————-->
+
+    <!--————————问题上报、工作流—————————-->
+
+
+    <!--排水户上报-->
+
+
+    <!--我的页面-->
+    <string name="mine_item_sign">Sign In</string>
+    <string name="mine_item_collection">Collection</string>
+    <string name="mine_item_backlog">Backlog</string>
+    <string name="mine_item_envelopes">Red Envelope</string>
+    <string name="mine_item_setting">Setting</string>
+    <string name="mine_item_exit">Exit</string>
+    <string name="mine_everyday_sign">Daily Sign</string>
+
+    <!--表单-->
+    <string name="form_now_the_photo">Photo</string>
+    <string name="form_select_facility_problem">Select facilities and problem locations</string>
+    <string name="form_problem_position">Problem locations</string>
+    <string name="form_problem_position_fill">Fill up problem locations</string>
+    <string name="form_problem_road">Problem Roads</string>
+    <string name="form_problem_road_fill">Fill up the problem roads</string>
+    <string name="form_facility_type">Facilities Type</string>
+    <string name="form_problem_type">Type of problem</string>
+    <string name="form_report_time">Report time</string>
+    <string name="form_emergency_degree">Emergency degree</string>
+    <string name="form_problem_des">Problem descriptions</string>
+    <string name="form_problem_des_fill">Fill up the Problem descriptions</string>
+    <string name="form_do_by_oneself">Handle by oneself</string>
+    <string name="form_do_description">Description of handles</string>
+    <string name="form_do_description_fill">Fill up the description of handles</string>
+    <string name="form_list_number">Listed Number</string>
+    <string name="form_road">Road</string>
+    <string name="form_door_number">Doorplate Number</string>
+    <string name="form_problem_name">Problem Name</string>
+    <string name="form_problem_do_or_not">Processed or not</string>
+    <string name="form_acc_name">Water Point</string>
+    <string name="form_acc_depth">Depth of water</string>
+    <string name="form_report_unit">Report Unit</string>
+    <string name="form_report_person">Reporter</string>
+    <string name="form_check_state">Audit State</string>
+    <string name="form_facility_position">Facility Location</string>
+    <string name="form_inlet">Type of inlet</string>
+    <string name="form_rain_pollution_category">Type of Pollution</string>
+    <string name="form_manhole_material">Material of Manhole Cover</string>
+    <string name="form_feature">Feature</string>
+    <string name="form_form">Form</string>
+    <string name="form_emissions_to">Emission To</string>
+    <string name="form_ownership_units">Ownership Unit</string>
+    <string name="form_manage_state">Manager State</string>
+    <string name="form_facility_problem">Facility Problem</string>
+    <string name="form_report_instructions">Report Instructions</string>
+    <string name="form_owner_unit">Owener Unit</string>
+    <string name="form_last_modified_time">Last Modified Time</string>
+    <string name="form_add_photo3">Add at least 3 photos</string>
+    <string name="form_check_type">Check Type</string>
+    <string name="form_facility_name">Facility Name</string>
+    <string name="form_team_member">Team Members</string>
+    <string name="form_drainage_name">Drainage-Unit Name</string>
+    <string name="form_own_to_town">Town</string>
+    <string name="form_water_use">Water consumption</string>
+    <string name="form_detail_address">Detail Address</string>
+    <string name="form_owner_name">Owner Name</string>
+    <string name="form_own_tel">Owner Tel</string>
+    <string name="form_legal_name">Legal Person Name</string>
+    <string name="form_legal_phone">Legal Person Tel</string>
+    <string name="form_business_license">Business License</string>
+    <string name="form_credit_code">Credit Code</string>
+    <string name="form_approval_of_connection">Approval of the connection</string>
+    <string name="form_discharge_permit">Discharge Permit</string>
+    <string name="form_license_code">License Code</string>
+    <string name="form_pollutant_discharging_license">Blowdown Permit</string>
+    <string name="form_pollutant_discharging_type">Type of Pollution</string>
+    <string name="form_unit_type">Unit Type</string>
+    <string name="form_pipe_type">Pipe Type</string>
+    <string name="form_connection_manhole">Connection Manhole</string>
+    <string name="form_manhole_type">Manhole Type</string>
+    <string name="form_manhole_problem">Manhole Problem</string>
+    <string name="form_drainage_problem">Drainage Problem</string>
+    <string name="form_oil_separator">Oil Separator</string>
+    <string name="form_operation_state">Operation State</string>
+    <string name="form_maintain_or_not">Maintain Or Not</string>
+    <string name="form_maintenance_record">Maintenance Record</string>
+    <string name="form_grid">Grid</string>
+    <string name="form_settling_basin">Settling Basin</string>
+    <string name="form_other_pretreatment_facilities">Other pretreatment facilities</string>
+    <string name="form_administrative_region">Administrative Region</string>
+    <string name="form_town">Town</string>
+    <string name="form_village">Village</string>
+    <string name="form_street_road_alley">Street Road Alley</string>
+    <string name="form_report_type">Report Type</string>
+
+
+    <!--路径-->
+
+    <!--其他-->
+
+</resources>

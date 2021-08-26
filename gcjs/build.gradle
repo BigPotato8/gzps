@@ -1,0 +1,203 @@
+if (!isNeedgcjsAsLib.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        if (!isNeedgcjsAsLib.toBoolean()) {
+            applicationId "com.augurit.agmobile.agwater.gcjs"
+        }
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'armeabi'
+        }
+
+        //as3.0   flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+        flavorDimensions "versionCode"
+
+    }
+
+    // 签名配置
+    signingConfigs {
+        release {
+            keyAlias 'agmobile5_release'
+            keyPassword '123456'
+            storeFile file('key/agmobile5_release.jks')
+            storePassword '123456'
+        }
+//        release {
+//            keyAlias 'gcjs'
+//            keyPassword '123123'
+//            storeFile file('key/gcjs.jks')
+//            storePassword '123123'
+//        }
+        debug {
+            keyAlias 'agmobile5_debug'
+            keyPassword '123456'
+            storeFile file('key/agmobile5_debug.jks')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir(['libs'])
+            res.srcDirs = ['src/main/res',
+                           'src/main/res/monitor',
+                           'src/main/res_override'  // 覆盖底层res，用于样式修改
+            ]
+
+            if (!isNeedgcjsAsLib.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    //全部Module一起编译的时候剔除debug目录
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
+
+    //平台
+    productFlavors {
+
+        gcjs {//工程建设
+//            resValue "string", "app_name", "工程建设系统"
+            manifestPlaceholders = [PKG_VALUE: "gcjs",
+                                    APP_ICON : "@mipmap/ic_launcher",
+                                    APP_NAME : "佛山工建系统"]
+            applicationId 'com.augurit.agmobile.gcjs'
+        }
+
+        agwater {//agwater5
+//            resValue "string", "app_name", "agwater5"
+            manifestPlaceholders = [PKG_VALUE: "agwater",
+                                    APP_ICON : "@mipmap/ic_launcher",
+                                    APP_NAME : "agwater5"]
+        }
+
+    }
+
+//    productFlavors.all { flavor ->
+//        flavor.manifestPlaceholders = [PKG_VALUE: name]//name代表的是"gzps"，"psh"等，即productFlavors中的每个声明
+//    }
+
+    //输出指定名称apk
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.all {
+//            if (variant.buildType.name == "release") {
+//                //apk名称为：前缀_渠道名称_版本号_版本名称_模式.apk
+//                outputFileName = "APP_${variant.productFlavors[0].name}_${versionCode}_${versionName}_release.apk"
+//            } else {
+//                outputFileName = "APP_${variant.productFlavors[0].name}_${versionCode}_${versionName}_debug.apk"
+//            }
+//        }
+//    }
+
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+//    implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+//    implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibVersion"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion"
+    implementation "com.android.support:support-v4:$rootProject.ext.supportLibVersion"
+    //    implementation 'com.github.huburt-Hu:NewbieGuide:v2.4.0'
+    //    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.2'
+    //    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.2'
+//    testImplementation 'junit:junit:4.12'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.bigkoo:ConvenientBanner:2.1.4'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+//    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.ext.espressoCoreVersion"
+    implementation "com.augurit.agmobile:business-ui:$rootProject.ext.agmobileLibsVersion"
+    implementation "com.augurit.agmobile:business-bpm:$rootProject.ext.agmobileLibsVersion"
+    implementation "com.augurit.agmobile:lib-im:$rootProject.ext.agmobileLibsVersion"
+    implementation "com.augurit.agmobile:lib-baidumap:$rootProject.ext.agmobileLibsVersion"
+    implementation "com.augurit.agmobile:lib-baiduvoice:$rootProject.ext.agmobileLibsVersion"
+//    implementation project(':lib-im')
+
+    implementation 'com.google.android:flexbox:0.2.3'
+    //implementation(name: 'IMKit-release', ext: 'aar')
+    //implementation(name: 'IMLiB-release', ext: 'aar')
+    implementation 'com.android.support:multidex:1.0.3'
+//    implementation 'com.tencent.bugly:crashreport_upgrade:1.3.9'
+    //pdf
+    implementation 'com.lidong.pdf:android_pdf:1.0.1'
+    //查询fragment,studio3.0后需要把资源里"@android:windowEnterAnimation"改为"android:windowEnterAnimation"
+    implementation 'com.wenwenwen888:searchbox:1.0.1'
+//    implementation project(':IMKit')
+//    implementation project(':IMLib')
+    //
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.5.0'
+
+    implementation 'es.voghdev.pdfviewpager:library:1.0.6'
+
+    implementation "com.augurit.agmobile:lib-qrcode:$rootProject.ext.agmobileLibsVersion"
+    implementation files('libs/EasySwipeMenuLayout-1.1.2.aar')
+    implementation project(':common')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
+    implementation 'com.android.support:support-v4:26.1.0'
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion "$rootProject.ext.supportLibVersion"
+            }
+        }
+    }
+}

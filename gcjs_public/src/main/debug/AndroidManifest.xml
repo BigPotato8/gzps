@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.augurit.agmobile.agwater5">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <application
+        android:name=".GcjsAgWaterApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="preferExternal"
+        android:label="工程建设公众版"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AgWater5Theme"
+        android:usesCleartextTraffic="true"
+        tools:replace="label,name,theme">
+
+        <!--<meta-data-->
+        <!--android:name="APP_PKG_KEY"-->
+        <!--android:value="${PKG_VALUE}" />-->
+
+        <!--<activity android:name=".drainage.feedback.view.FeedBackFormActivity"/>-->
+        <!--<activity android:name=".sewage.uploadfacility.view.NWCheckFacilityFormActivity"/>-->
+        <!--<activity android:name=".drainage.feedback.view.FeedBackMapActivity"/>-->
+        <!--<activity android:name=".psh.problem.view.PshListActivity"/>-->
+        <!--<activity android:name=".psh.problem.view.PshProblemUploadActivity"/>-->
+        <!--<activity android:name=".sewage.uploadfacility.view.AddFacilityActivity"/>-->
+        <!--<activity-->
+        <!--android:name=".sewage.uploadfacility.view.SewageAddDetailFormActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="stateHidden"/>-->
+        <activity
+            android:name=".gcjs_public.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullNullTheme"
+            android:windowSoftInputMode="adjustResize">
+
+
+        </activity>
+        <activity
+            android:name=".GcjsMainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--<activity-->
+        <!--android:name=".GcjsLoginActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustResize">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.augurit.agwater5.login.LoginActivity"/>-->
+        <!--<category android:name="android.intent.category.DEFAULT"/>-->
+        <!--</intent-filter>-->
+
+        <!--</activity>-->
+        <activity
+            android:name=".gcjs_public.mine.SkinSettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".gcjs_public.mine.AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".gcjs_public.mine.MyOrgActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".gcjs_public.mine.SelfProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".gcjs_public.mine.SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.augurit.common.common.BaseWebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.augurit.common.common.form.AwFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity
+            android:name="com.augurit.common.im.view.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:host="com.augurit.agmobile.agwater5"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity> <!-- 会话列表 -->
+        <activity
+            android:name="com.augurit.common.im.view.ConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:host="com.augurit.agmobile.agwater5"
+                    android:path="/conversationlist"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path"/>
+        </provider>
+
+
+        <activity android:name="com.augurit.common.common.form.TestFormActivity"/>
+        <activity android:name=".gcjs_public.mine.sign.view.SignActivity"/>
+
+        <service android:name="com.augurit.agmobile.busi.common.auth.AuthTaskService"/>
+
+        <activity
+            android:name="com.augurit.agmobile.busi.common.auth.AuthDialogActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTransparent"/>
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="k6XRRUK8kVeRp0f1XONiOr4kuo88L1cd"/>
+        <!-- 7vg6gmhGkvDmzPhw54bfG3LNmFSwiWcQ -->
+
+        <!-- 百度语音 -->
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="14239250"/>
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="OmQQ2zTx3zYU5amCGcM3ZxYf"/>
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="zTWxG46vMm1XCgMNfNjLqS9Wevpcljl4"/>
+
+        <activity
+            android:name=".gcjs_public.common.webview.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <!--<meta-data-->
+        <!--android:name=".common.glide.MyGlideModule"-->
+        <!--android:value="GlideModule" />-->
+        <activity
+            android:name=".gcjs_public.mine.MineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <!--工程建设公众版-->
+
+        <activity
+            android:name=".gcjs_public.personspace.uploadevent.UploadProjectListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.personspace.uploadevent.eventlist.EventListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.personspace.eventuploaded.EventUploadedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.personspace.uploadevent.single.SingleUploadEventActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.consult.ConsultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.personspace.uploadevent.multi.MultiUploadEventActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".gcjs_public.personspace.projectprocess.view.ProjectProcessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".gcjs_public.personspace.projectprocess.view.ProjectProcessDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.zcfg.ZcfgActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".GcjsVisitorLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.serach.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".gcjs_public.common.WatchImageOrPdfActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".gcjs_public.announce.AnnounceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.personspace.myproject.MyProjectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.personspace.newproject.NewProjectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.personspace.projectrate.ProjectRateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.personspace.completematerial.CompleteMaterialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".gcjs_public.personspace.prolist.ProjectListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".gcjs_public.personspace.materialsupply.MaterialSupplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".gcjs_public.personspace.mymaterial.MyMaterialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".gcjs_public.bszn.BszntActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".gcjs_public.personspace.approveinfo.ApproveInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+    </application>
+
+</manifest>

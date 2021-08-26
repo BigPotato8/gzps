@@ -1,0 +1,198 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.augurit.agmobile.agwater5"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'armeabi', 'x86', "armeabi-v7a"
+        }
+
+        //as3.0   flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+//        flavorDimensions "versionCode"
+
+    }
+
+    // 签名配置
+    signingConfigs {
+        release {
+            keyAlias 'agmobile5_release'
+            keyPassword '123456'
+            storeFile file('key/agmobile5_release.jks')
+            storePassword '123456'
+        }
+        debug {
+            keyAlias 'agmobile5_debug'
+            keyPassword '123456'
+            storeFile file('key/agmobile5_debug.jks')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir(['libs'])
+            res.srcDirs = ['src/main/res',
+                           'src/main/res/monitor']
+
+        }
+    }
+//
+//    //平台
+//    productFlavors {
+//        agwater {//agwater5
+//            resValue "string", "app_name", "agwater"
+//            manifestPlaceholders = [PKG_VALUE: "agwater",
+//                                    APP_ICON : "@mipmap/ic_launcher"]
+//        }
+//        gzps {//排水巡检
+//            resValue "string", "app_name", "广州排水巡检"
+//            manifestPlaceholders = [PKG_VALUE: "gzps",
+//                                    APP_ICON : "@mipmap/ic_launcher"]
+//        }
+//        psh {//排水户
+//            resValue "string", "app_name", "广州排水户"
+//            manifestPlaceholders = [PKG_VALUE: "psh",
+//                                    APP_ICON : "@mipmap/ic_launcher"]
+//        }
+//        gzws {//农污
+//            resValue "string", "app_name", "广州农污巡检"
+//            manifestPlaceholders = [PKG_VALUE: "gzws",
+//                                    APP_ICON : "@mipmap/ic_launcher"]
+//        }
+//        fxyj {//防汛应急
+//            resValue "string", "app_name", "防汛应急"
+//            manifestPlaceholders = [PKG_VALUE: "fxyj",
+//                                    APP_ICON : "@mipmap/ic_launcher"]
+//        }
+//        nn {//南宁邕江防洪
+//            resValue "string", "app_name", "邕江防洪排涝"
+//            manifestPlaceholders = [PKG_VALUE: "nn",
+//                                    APP_ICON : "@mipmap/ic_launcher"]
+//        }
+//
+//        loc {//agwater5
+//            resValue "string", "app_name", "奥格定位"
+//            applicationId "com.augurit.agmobile.agwater.loc"
+//            manifestPlaceholders = [PKG_VALUE: "agwater",
+//                                    APP_ICON : "@mipmap/ic_launcher"]
+//        }
+//    }
+
+//    productFlavors.all { flavor ->
+//        flavor.manifestPlaceholders = [PKG_VALUE: name]//name代表的是"gzps"，"psh"等，即productFlavors中的每个声明
+//    }
+
+    //输出指定名称apk
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            if (variant.buildType.name == "release") {
+                //apk名称为：前缀_渠道名称_版本号_版本名称_模式.apk
+                outputFileName = "agwater5_${versionName}.apk"
+            } else {
+                outputFileName = "agwater5_${versionName}.apk"
+            }
+        }
+    }
+
+    // 特殊原因 因为子系统模块 和主模块的包名都是相同的，打包release时BuildConfig冲突，故子系统的BuildConfig不生成
+    if (isNeedSewageAsLib.toBoolean()) {
+        afterEvaluate {
+            generateReleaseBuildConfig.enabled = false
+            generateDebugBuildConfig.enabled = false
+        }
+    }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.android:flexbox:0.2.3'
+    //implementation(name: 'IMKit-release', ext: 'aar')
+    //implementation(name: 'IMLiB-release', ext: 'aar')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.tencent.bugly:crashreport_upgrade:1.3.4'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    //pdf
+    implementation 'com.lidong.pdf:android_pdf:1.0.1'
+    //查询fragment,studio3.0后需要把资源里"@android:windowEnterAnimation"改为"android:windowEnterAnimation"
+    implementation 'com.wenwenwen888:searchbox:1.0.1'
+    implementation project(':common')
+
+
+//    implementation 'com.alibaba:arouter-api:1.4.1'
+//    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+    //在gradle.properties配置
+    if (isNeedDrainageAsLib.toBoolean()) {
+        implementation project(':drainage')
+    }
+
+    if (isNeedNanningAsLib.toBoolean()) {
+        implementation project(':nanning')
+    }
+    if (isNeedPshAsLib.toBoolean()) {
+        implementation project(':psh')
+    }
+    if (isNeedSewageAsLib.toBoolean()) {
+        implementation project(':sewage')
+    }
+    if (isNeedFloodAsLib.toBoolean()) {
+        implementation project(':flood')
+    }
+    if (isNeedPipelineAsLib.toBoolean()) {
+        implementation project(':pipeline')
+    }
+}
+// 统一support包版本
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion "$rootProject.ext.supportLibVersion"
+            }
+        }
+    }
+}

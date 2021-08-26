@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/agmobile_surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="visible">
+
+        <com.augurit.agmobile.common.im.imsdk.ui.CircleImageView
+            android:id="@+id/iv_icon_title"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_share"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="通知公告"
+            android:textColor="@color/agmobile_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_main_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2小时前"
+            android:textColor="@color/agmobile_grey_3_trans"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="142dp">
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/banner3"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_surface" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="text"
+            android:textColor="@color/agmobile_surface"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</LinearLayout>

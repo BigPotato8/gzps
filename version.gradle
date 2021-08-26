@@ -1,0 +1,15 @@
+ext {
+
+    // 底层依赖库版本号
+    agmobileLibsVersion = "5.5.0.76"
+
+
+    supportLibVersion = '26.1.0'
+    constraintLayoutVersion = '1.1.0'
+    espressoCoreVersion = '3.0.2'
+
+    compileSdkVersion = 26
+    minSdkVersion = 16
+    targetSdkVersion = 26
+
+}

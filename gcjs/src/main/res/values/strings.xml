@@ -1,0 +1,260 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!--<string name="app_name">agwater</string>-->
+    <string name="app_name">工程建设企业版</string>
+    <string name="login_welcome_title">欢迎使用</string>
+    <string name="login_welcome_system">工程建设系统</string>
+    <string name="login_auto_login_failed">登录失败，请尝试手动登录</string>
+
+    <string name="search_bar_hint">搜索应用、新闻、资料</string>
+
+    <!--————————菜单—————————-->
+
+    <!--底栏-->
+    <string name="menu_home_work">工作</string>
+    <string name="menu_im">消息</string>
+    <string name="menu_contacts">通讯录</string>
+    <string name="menu_mine">我的</string>
+
+    <!--防汛应急-->
+
+    <!--即时通讯-->
+    <string name="conversation">会话</string>
+    <string name="friend_list">通讯录</string>
+    <string name="work_list">工作组</string>
+    <string name="im_no_friends">暂无好友</string>
+    <string name="im_no_teams">暂未加入群组</string>
+    <string name="menu_scan">扫一扫</string>
+    <string name="announce_no_result">暂无公告</string>
+    <string name="msg_no_result">暂无个人消息</string>
+
+    <!--统计-->
+    <string name="install_statistic">安装统计</string>
+    <string name="report_statistics">上报统计</string>
+    <string name="sign_statistic">签到统计</string>
+    <string name="statistic_app_title">APP安装率统计</string>
+    <string name="statistic_first_man">一线人员统计</string>
+    <string name="statistic_manager">管理层统计</string>
+    <string name="statistic_total">总人数</string>
+    <string name="statistic_installed">已安装</string>
+    <string name="statistic_unInstalled">未安装</string>
+    <string name="statistic_position">职务：</string>
+    <string name="statistic_tel">电话：</string>
+    <string name="statistic_organization">机构：</string>
+    <string name="statistic_report">数据上报统计</string>
+    <string name="statistic_device_type">设施类型</string>
+    <string name="statistic_times">统计时段</string>
+    <string name="statistic_to">至</string>
+    <string name="statistic_confirm">确定时段</string>
+    <string name="statistic_today">今天</string>
+    <string name="statistic_yesterday">昨天</string>
+    <string name="statistic_report_state">今日和昨日全市数据上报情况</string>
+    <string name="statistic_sign">签到统计</string>
+    <string name="statistic_signs_today">今日签到人数</string>
+    <string name="statistic_signs_yesterday">昨日签到人数</string>
+
+    <!--工程建设-->
+    <string name="menu_rawFile">政策文件</string>
+    <string name="menu_fileIndicate">办事指南</string>
+    <string name="menu_reformTree">改革流程图</string>
+    <string name="menu_informPromise">政策法规</string>
+
+
+    <!--巡检-->
+    <string name="menu_todo">待办事项</string>
+    <string name="menu_todo1">待办任务</string>
+    <string name="menu_done">已办事项</string>
+    <string name="menu_check">督办事项</string>
+    <string name="menu_msg">个人消息</string>
+    <string name="menu_all">所有事项</string>
+    <string name="menu_overtime">逾期任务</string>
+    <string name="menu_warning">预警任务</string>
+
+    <string name="search_more">查看更多</string>
+
+    <string name="menu_data_report">数据上报</string>
+
+    <!--专栏-->
+    <string name="menu_announcement">通知公告</string>
+    <string name="menu_communication">经验交流</string>
+    <string name="menu_help">操作须知</string>
+    <!--上报概览-->
+    <string name="review_new">新增</string>
+    <string name="review_check">校核</string>
+    <string name="review_total">总数</string>
+    <string name="review_doubt">存在疑问</string>
+    <string name="review_pass">审核通过</string>
+
+    <!--防汛调度-->
+
+    <!--日常工作-->
+
+    <!--————————功能分区标题—————————-->
+    <string name="part_title_report">办件统计</string>
+
+    <!--————————我的—————————-->
+    <string name="settings_menu_about">关于AGMobile</string>
+    <string name="settings_menu_my_org">我的单位</string>
+    <string name="settings_menu_skin">个性换肤</string>
+    <string name="settings_skin_default">清新蓝</string>
+    <string name="settings_skin_green">环保绿</string>
+    <string name="settings_skin_night">夜间</string>
+    <string name="about_menu_check_update">检查更新</string>
+    <string name="about_caption_copyright_development">©2018 研发中心移动应用研发部</string>
+
+    <!--————————在线监测—————————-->
+
+    <!--————————提示信息—————————-->
+    <string name="message_loading">加载中</string>
+    <string name="message_back">返回</string>
+
+    <!--————————排水巡检—————————-->
+
+    <!--————————数据上报—————————-->
+    <!--————————巡检日志—————————-->
+
+    <!--数据修补测-->
+
+    <!--————————事务公开—————————-->
+
+    <!--————————问题上报、工作流—————————-->
+    <string name="event_text_next_assignee">下一环节处理人</string>
+    <string name="event_text_nextlink">推送到下一环节</string>
+
+
+    <!--排水户上报-->
+
+
+    <!--————————排水户事务公开—————————-->
+
+    <!--我的页面-->
+    <string name="mine_item_sign">签到</string>
+    <string name="mine_item_collection">收藏</string>
+    <string name="mine_item_backlog">待办</string>
+    <string name="mine_item_envelopes">红包</string>
+    <string name="mine_item_setting">设置</string>
+    <string name="mine_item_exit">退出</string>
+    <string name="mine_everyday_sign">每日签到</string>
+
+    <!--表单-->
+    <string name="form_now_the_photo">现场照片</string>
+    <string name="form_select_facility_problem">选择设施或问题地点</string>
+    <string name="form_problem_position">问题地点</string>
+    <string name="form_problem_position_fill">请填写问题地点</string>
+    <string name="form_problem_road">问题道路</string>
+    <string name="form_problem_road_fill">请填写问题道路</string>
+    <string name="form_facility_type">设施类型</string>
+    <string name="form_problem_type">问题类型</string>
+    <string name="form_report_time">上报时间</string>
+    <string name="form_emergency_degree">紧急程度</string>
+    <string name="form_problem_des">问题描述</string>
+    <string name="form_problem_des_fill">请填写问题描述</string>
+    <string name="form_do_by_oneself">自行处理</string>
+    <string name="form_do_description">处理描述</string>
+    <string name="form_do_description_fill">请填写处理描述</string>
+    <string name="form_list_number">已挂牌编号</string>
+    <string name="form_road">路段</string>
+    <string name="form_problem_name">问题名称</string>
+    <string name="form_problem_do_or_not">是否已处理</string>
+    <string name="form_acc_name">积水点名称</string>
+    <string name="form_acc_depth">积水深度</string>
+    <string name="form_report_unit">上报单位</string>
+    <string name="form_report_person">上报人</string>
+    <string name="form_check_state">审核状态</string>
+    <string name="form_facility_position">设施位置</string>
+    <string name="form_inlet">窨井类型</string>
+    <string name="form_rain_pollution_category">雨污类别</string>
+    <string name="form_manhole_material">井盖材质</string>
+    <string name="form_feature">特征</string>
+    <string name="form_form">形式</string>
+    <string name="form_emissions_to">排放去向</string>
+    <string name="form_ownership_units">权属单位</string>
+    <string name="form_manage_state">管理状态</string>
+    <string name="form_facility_problem">设施问题</string>
+    <string name="form_report_instructions">上报说明</string>
+    <string name="form_owner_unit">业主单位</string>
+    <string name="form_last_modified_time">最后修改时间</string>
+    <string name="form_add_photo3">至少添加3张照片</string>
+    <string name="form_check_type">核准类型</string>
+    <string name="form_facility_name">设施名字</string>
+    <string name="form_team_member">班组成员</string>
+    <string name="form_drainage_name">排水户名称</string>
+    <string name="form_own_to_town">所属镇(街)</string>
+    <string name="form_door_number">门牌号</string>
+    <string name="form_water_use">月用水量(吨)</string>
+    <string name="form_detail_address">详细地址</string>
+    <string name="form_owner_name">产权人姓名</string>
+    <string name="form_own_tel">产权人联系电话</string>
+    <string name="form_legal_name">经营人(法人)姓名</string>
+    <string name="form_legal_phone">经营人(法人)联系电话</string>
+    <string name="form_business_license">工商营业执照</string>
+    <string name="form_credit_code">统一社会信用代码</string>
+    <string name="form_approval_of_connection">接驳意见核准书</string>
+    <string name="form_discharge_permit">排水许可证</string>
+    <string name="form_license_code">许可证编码</string>
+    <string name="form_pollutant_discharging_license">排污许可证</string>
+    <string name="form_pollutant_discharging_type">污水类别</string>
+    <string name="form_unit_type">单位类型</string>
+    <string name="form_pipe_type">管类别</string>
+    <string name="form_connection_manhole">所连接驳井</string>
+    <string name="form_manhole_type">井类别</string>
+    <string name="form_manhole_problem">井存在问题</string>
+    <string name="form_drainage_problem">排水存在问题</string>
+    <string name="form_oil_separator">隔油池</string>
+    <string name="form_operation_state">运行情况</string>
+    <string name="form_maintain_or_not">是否进行养护</string>
+    <string name="form_maintenance_record">养护记录及台账</string>
+    <string name="form_grid">格栅</string>
+    <string name="form_settling_basin">沉淀池</string>
+    <string name="form_other_pretreatment_facilities">其他预处理设施</string>
+    <string name="form_administrative_region">行政区</string>
+    <string name="form_town">鎮街</string>
+    <string name="form_village">村（居委會）</string>
+    <string name="form_street_road_alley">街路巷</string>
+    <string name="form_report_type">上报类型</string>
+
+
+    <!--路径-->
+
+    <!--其他-->
+    <!--市政-->
+
+
+    <!--————————南宁功能分区标题—————————-->
+
+
+    <!--—————工程建设—————-->
+    <string name="gcjs_title_baseInfo">基本信息</string>
+    <string name="gcjs_title_pwpf">批文</string>
+    <string name="gcjs_title_zjzz">证件</string>
+    <string name="gcjs_title_qtjgw">其它结果物</string>
+    <string name="gcjs_title_jgw">结果物</string>
+    <string name="gcjs_title_jgwbc">结果物补充材料</string>
+    <string name="gcjs_title_ytcl">一套材料</string>
+    <string name="gcjs_title_spxq">审批详情</string>
+    <string name="gcjs_title_clfj">材料附件</string>
+    <string name="gcjs_title_clbz">材料补正</string>
+    <string name="gcjs_title_tscx">特殊程序</string>
+
+
+    <string name="gcjs_item_baseInfo">项目申报</string>
+    <string name="gcjs_item_adviceList">办理意见</string>
+    <string name="gcjs_item_eventList">申报信息</string>
+    <string name="gcjs_item_materialList">材料列表</string>
+
+    <string name="gcjs_item_paperList">办件信息</string>
+    <string name="gcjs_item_projectList">项目/工程信息</string>
+    <string name="gcjs_item_declareList">申报主体信息</string>
+
+    <string name="gcjs_fj_sbcl">申办材料</string>
+    <string name="gcjs_fj_pwpf">批文批复</string>
+    <string name="gcjs_page_uppage">上一页</string>
+    <string name="gcjs_page_downpage">下一页</string>
+    <!--—————工程建设 结束—————-->
+
+
+    <!--—————sweet dialog—————-->
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+</resources>

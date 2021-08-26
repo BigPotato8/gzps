@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/padding_5"
+    android:layout_marginTop="@dimen/padding_5"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="征求部门"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="@dimen/sp_16"/>
+
+
+            <TextView
+                android:id="@+id/tv_department"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="2"
+                android:text="环保环境规划局"
+                android:textColor="@color/agmobile_black"
+                android:textSize="@dimen/sp_16"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:background="#eeeeee"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="事项名称"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:id="@+id/tv_event_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="2"
+                android:text="环境标准检测"
+                android:textColor="@color/agmobile_black"
+                android:textSize="@dimen/sp_16"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

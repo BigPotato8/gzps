@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/agmobile_background"
+    android:fitsSystemWindows="true">
+
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleText="@string/settings_menu_skin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/title_bar" >
+
+        <LinearLayout
+            android:id="@+id/view_default"
+            style="@style/SkinSettingPanel">
+
+            <View
+                style="@style/SkinSettingPanelView"
+                android:background="@drawable/bg_skin_panel_default"/>
+
+            <TextView
+                style="@style/SkinSettingPanelText"
+                android:text="@string/settings_skin_default"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_green"
+            style="@style/SkinSettingPanel">
+
+            <View
+                style="@style/SkinSettingPanelView"
+                android:background="@drawable/bg_skin_panel_green"/>
+
+            <TextView
+                style="@style/SkinSettingPanelText"
+                android:text="@string/settings_skin_green"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_night"
+            style="@style/SkinSettingPanel"
+            android:visibility="gone">
+
+            <View
+                style="@style/SkinSettingPanelView"
+                android:background="@drawable/bg_skin_panel_night"/>
+
+            <TextView
+                style="@style/SkinSettingPanelText"
+                android:text="@string/settings_skin_night"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

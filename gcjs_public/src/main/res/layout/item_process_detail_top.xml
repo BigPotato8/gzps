@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:id="@+id/iv_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/lxyd"/>
+
+    <TextView
+        android:id="@+id/iv_state"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="状态"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_imageView"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_phase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/iv_imageView"
+            android:text="阶段"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sx"/>
+
+            <TextView
+                android:id="@+id/tv_sz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_phase"
+                android:text="事項 16"
+                android:layout_marginLeft="3dp"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/bjl"/>
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="辦結率 16%"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ls"/>
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_count"
+                android:layout_alignLeft="@+id/tv_count"
+                android:layout_marginLeft="3dp"
+                android:text="歷時(工作日)"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

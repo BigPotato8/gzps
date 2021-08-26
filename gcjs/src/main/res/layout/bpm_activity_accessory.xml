@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/agmobile_background"
+    android:orientation="vertical">
+
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:layout_constraintBottom_toTopOf="@+id/view_net_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleText="附件管理"/>
+
+    <include
+        android:id="@+id/view_net_error"
+        layout="@layout/view_net_error_bar"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_bar"
+        tools:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_net_error"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.augurit.agmobile.common.view.loadinglayout.LoadingMaskLayout
+        android:id="@+id/mask_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/view_container"
+        app:layout_constraintTop_toBottomOf="@id/view_net_error">
+
+    </com.augurit.agmobile.common.view.loadinglayout.LoadingMaskLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btn_add"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_floating_button"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/ic_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:id="@+id/view_divider_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="0dp"
+            android:background="@color/agmobile_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/agmobile_button_height"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:background="@drawable/weui_bg_btn_plain_primary"
+                android:textColor="@drawable/weui_bg_btn_primary_text_normal"
+                android:textSize="@dimen/agmobile_text_body"
+                android:text="上传"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

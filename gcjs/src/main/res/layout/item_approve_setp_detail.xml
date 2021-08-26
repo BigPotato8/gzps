@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="@dimen/dp_4"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_4"
+    android:background="@drawable/agmobile_bg_card_radius"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_node_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="缺省标题"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_comment_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实施主体：" />
+
+        <TextView
+            android:id="@+id/tv_org_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="XXX居" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="办理人员：" />
+
+        <TextView
+            android:id="@+id/tv_task_assignee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="办理人员，办理人员" />
+
+        <Button
+            android:id="@+id/btn_more_assignee"
+            android:layout_width="32dp"
+            android:layout_height="16dp"
+            android:background="@drawable/agmobile_btn_line"
+            android:text="更多"
+            android:textColor="@color/agmobile_blue"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="办理意见：" />
+
+        <TextView
+            android:id="@+id/tv_comment_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/line_dash"
+        android:layerType="software" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="办理时间：" />
+
+            <TextView
+                android:id="@+id/tv_signin_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="办理用时：" />
+
+            <TextView
+                android:id="@+id/tv_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/agmobile_btn_line"
+            android:gravity="right"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_4"
+            android:text="正常办理" />
+    </LinearLayout>
+</LinearLayout>

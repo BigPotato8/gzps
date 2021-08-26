@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/agmobile_background"
+              android:orientation="vertical">
+
+    <com.augurit.common.common.view.YesScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.augurit.common.common.view.YesScrollViewPager>
+
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/agmobile_divider" />
+
+    <com.augurit.agmobile.common.view.navigation.NavigationTabLayout
+        android:id="@+id/navigation_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/agmobile_bottom_bar_height"
+        android:background="@color/agmobile_background_bottom_bar"
+        android:orientation="horizontal">
+
+        <com.augurit.agmobile.common.view.navigation.NavigationTab
+            android:id="@+id/tab_message"
+            style="@style/NavigationTab"
+            app:tabIconNormal="@mipmap/tab_ic_im"
+            app:tabIconSelected="@mipmap/tab_ic_im_selected"
+            app:tabText="@string/menu_im" />
+
+        <com.augurit.agmobile.common.view.navigation.NavigationTab
+            android:id="@+id/tab_work"
+            style="@style/NavigationTab"
+            app:tabIconNormal="@mipmap/tab_ic_drainge"
+            app:tabIconSelected="@mipmap/tab_ic_drainge_selected"
+            app:tabText="@string/menu_drainage" />
+        <com.augurit.agmobile.common.view.navigation.NavigationTab
+            android:id="@+id/tab_psh"
+            style="@style/NavigationTab"
+            app:tabIconNormal="@mipmap/tab_ic_drainge"
+            app:tabIconSelected="@mipmap/tab_ic_drainge_selected"
+            app:tabText="@string/menu_psh" />
+
+       <!-- <com.augurit.agmobile.common.view.navigation.NavigationTab
+            android:id="@+id/tab_nw"
+            style="@style/NavigationTab"
+            app:tabIconNormal="@mipmap/tab_ic_sewage"
+            app:tabIconSelected="@mipmap/tab_ic_sewage_selected"
+            app:tabText="@string/menu_sewage" />-->
+
+        <!--<com.augurit.agmobile.common.view.navigation.NavigationTab-->
+            <!--android:id="@+id/tab_contact"-->
+            <!--style="@style/NavigationTab"-->
+            <!--app:tabIconNormal="@mipmap/tab_ic_flood"-->
+            <!--app:tabIconSelected="@mipmap/tab_ic_flood_selected"-->
+            <!--app:tabText="@string/menu_flood" />-->
+
+        <!--&lt;!&ndash;<com.augurit.agmobile.common.view.navigation.NavigationTab-->
+            <!--android:id="@+id/tab_shizheng"-->
+            <!--style="@style/NavigationTab"-->
+            <!--app:tabIconNormal="@mipmap/tab_ic_drainge"-->
+            <!--app:tabIconSelected="@mipmap/tab_ic_drainge_selected"-->
+            <!--app:tabText="@string/menu_shizheng" />&ndash;&gt;-->
+
+     <!--   <com.augurit.agmobile.common.view.navigation.NavigationTab
+            android:id="@+id/tab_nanning"
+            style="@style/NavigationTab"
+            app:tabIconNormal="@mipmap/tab_ic_drainge"
+            app:tabIconSelected="@mipmap/tab_ic_drainge_selected"
+            app:tabText="@string/menu_nanning" />-->
+        <!--<com.augurit.agmobile.common.view.navigation.NavigationTab-->
+            <!--android:id="@+id/tab_pipeline"-->
+            <!--style="@style/NavigationTab"-->
+            <!--app:tabIconNormal="@mipmap/tab_ic_sewage"-->
+            <!--app:tabIconSelected="@mipmap/tab_ic_sewage_selected"-->
+            <!--app:tabText="@string/menu_pipeline" />-->
+        <com.augurit.agmobile.common.view.navigation.NavigationTab
+            android:id="@+id/tab_mine"
+            style="@style/NavigationTab"
+            app:tabIconNormal="@mipmap/tab_ic_mine"
+            app:tabIconSelected="@mipmap/tab_ic_mine_selected"
+            app:tabText="@string/menu_mine" />
+
+    </com.augurit.agmobile.common.view.navigation.NavigationTabLayout>
+
+</LinearLayout>

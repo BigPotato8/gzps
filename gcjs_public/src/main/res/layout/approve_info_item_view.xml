@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/agmobile_bg_list_item"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/view_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="项目名称：康和金沙汇"
+                android:textColor="@color/agmobile_text_body"
+                android:textSize="@dimen/agmobile_text_body"/>
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目代码：2019の23让日4它5它5y65u5654y410170004"
+                android:textColor="@color/agmobile_text_body"
+                android:textSize="@dimen/agmobile_text_body_sub"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="组织单位：江门市交通局"
+                android:textColor="@color/agmobile_text_body_night"
+                android:textSize="@dimen/agmobile_text_body_sub"/>
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="项目属性：政府投资项目审批"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="@dimen/agmobile_text_caption"/>
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="开始时间：2019-10-20"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="@dimen/agmobile_text_caption"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bpm_bg_state_tag_list"
+            android:paddingLeft="6dp"
+            android:paddingTop="4dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/bpm_text_state_tag"
+            android:textSize="@dimen/agmobile_text_body_sub"
+            android:text="已受理"/>
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+</LinearLayout>

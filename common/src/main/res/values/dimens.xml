@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--功能分区间距-->
+    <dimen name="func_part_spacing">10dp</dimen>
+
+    <dimen name="dialog_btn_radius">2dp</dimen><!--对话框按钮圆角-->
+
+    <!--上报界面相关参数-->
+    <dimen name="patrol_upload_view_margin_left">8dp</dimen>
+    <!--地图截图的高度-->
+    <dimen name="partrol_upload_text_size">16sp</dimen>
+    <dimen name="patrol_upload_text_padding">2dp</dimen>
+    <dimen name="patrol_upload_text_width">95dp</dimen>
+
+    <!-- 日常工作 -->
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="top_bar_height">42dp</dimen><!--顶栏高度-->
+
+    <!--<dimen name="form2_widget_divider_height">0px</dimen>-->
+    <!--<dimen name="form2_widget_spacing_horizontal">8dp</dimen>-->
+    <!--<bool name="form2_bpm_form_is_card_style">true</bool>-->
+
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="identify_candidate_item_height">130dp</dimen>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人详细信息"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/agmobile_grey_0" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="姓名：" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_info_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="工号：" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_info_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="常用地址：" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_info_registered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="户口所在地：" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_info_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="联系电话：" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_info_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="邮箱：" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_info_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="职务：" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/agmobile_grey_0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_btn_filter_reset"
+            android:text="取消"
+            android:textColor="#535353"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_btn_filter_confirm"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_selected_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:gravity="center|left">
+
+    <ImageView
+        android:id="@+id/tv_left_fun_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/clock_circle_cill"></ImageView>
+
+    <TextView
+        android:id="@+id/tv_left_fun_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/agmobile_black"
+        android:text="untitled" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_toRightOf="@+id/tv_dblb"
+        android:background="@drawable/bg_message_num"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="3dp"
+        android:text="200"
+        android:textColor="@color/white" />
+</LinearLayout>

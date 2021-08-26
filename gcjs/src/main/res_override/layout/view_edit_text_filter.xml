@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_bg"
+    style="@style/WidgetRootViewStyle">
+
+    <include
+        layout="@layout/view_divider_horizontal_with_margin"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_left_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Form2FilterKeyTextStyle"
+                tools:text="办结人办结人" />
+
+            <TextView
+                android:id="@+id/tv_requiredTag"
+                style="@style/WidgetRequireTagStyle"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/widget_spacing_horizontal"
+            android:paddingRight="@dimen/widget_spacing_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    style="@style/Form2WidgetEditTextStyle"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:minHeight="36dp"
+                    android:inputType="textMultiLine"
+                    tools:hint="请输入" />
+
+                <LinearLayout
+                    android:id="@+id/btn_more"
+                    style="@style/WidgetEditButtonStyle"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:paddingLeft="5.2dp"
+                    android:paddingRight="5.2dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_more"
+                        style="@style/WidgetEditButtonIconStyle"/>
+
+                    <TextView
+                        android:id="@+id/tv_more"
+                        style="@style/WidgetEditButtonTextStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error"
+                style="@style/WidgetErrorTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

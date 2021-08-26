@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/agmobile_primary"
+        app:tabBackground="@color/agmobile_primary"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/agmobile_text_title_bar"
+        app:tabIndicatorHeight="4dp"
+        app:tabTextColor="@color/agmobile_text_title_bar">
+
+    </android.support.design.widget.TabLayout>
+
+    <com.augurit.agmobile.agwater5.common.view.YesScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.augurit.agmobile.agwater5.common.view.YesScrollViewPager>
+
+</LinearLayout>

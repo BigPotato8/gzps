@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gcjs_approval_titlebar_gradient"
+        app:canBack="true"
+        app:titleText="回执信息表"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/light_gray"
+        android:visibility="gone"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/agmobile_button_height"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@drawable/weui_bg_btn_plain_red"
+            android:textColor="@drawable/weui_bg_btn_warn_text_normal"
+            android:textSize="@dimen/agmobile_text_body"
+            android:text="@string/bpm_form_btn_delete" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/agmobile_divider"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/agmobile_button_height"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@drawable/weui_bg_btn_plain_primary"
+            android:textColor="@drawable/weui_bg_btn_primary_text_normal"
+            android:textSize="@dimen/agmobile_text_body"
+            android:text="@string/bpm_form_btn_save"/>
+        <!--<View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/agmobile_divider" />
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/agmobile_button_height"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:background="@drawable/weui_bg_btn_plain_primary"
+            android:textColor="@drawable/weui_bg_btn_primary_text_normal"
+            android:textSize="@dimen/agmobile_text_body"
+            android:text="@string/bpm_form_btn_edit" />-->
+
+    </LinearLayout>
+</LinearLayout>

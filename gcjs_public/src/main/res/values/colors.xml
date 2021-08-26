@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tab_text_normal">#9e9e9e</color>
+    <color name="tab_text_selected">@color/agmobile_primary</color>
+
+    <color name="dust_grey">#414141</color>
+    <color name="black">#000000</color>
+
+    <color name="common_head_item_selected">#441dd3de</color>
+    <color name="common_head_item_normal">@color/agmobile_surface</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="dark_gray_light">#a0a0a0</color>
+
+    <!--==============我的上报列表============-->
+
+
+    <!--轨迹列表分割线颜色-->
+
+    <!--污水管字体颜色-->
+    <!--雨水管字体颜色-->
+    <!--雨污合流的字体颜色-->
+
+    <color name="primary_background_color">#F1F2F5</color>
+
+    <!--已安装字体的颜色-->
+
+</resources>

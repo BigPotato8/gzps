@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/view_node"
+        />
+
+    <View
+        android:id="@+id/line_buttom"
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/view_node"
+        />
+    
+    <View
+        android:id="@+id/view_node"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/bg_circle_20dp_blue"
+        />
+
+    
+
+</RelativeLayout>

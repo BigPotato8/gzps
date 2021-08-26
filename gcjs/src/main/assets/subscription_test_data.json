@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "child": [
+      {
+        "id": 1,
+        "title": "通知公告消息1",
+        "content": "消息1",
+        "picUrl": "https://screenshot-1258218961.cos.ap-guangzhou.myqcloud.com/notify_message1.png",
+        "pic": -1,
+        "jumpUrl": "http://23242342",
+        "isHeader": true,
+        "isAffiliate": false
+      },
+      {
+        "id": 2,
+        "title": "通知公告消息2",
+        "content": "消息2",
+        "picUrl": "https://screenshot-1258218961.cos.ap-guangzhou.myqcloud.com/notify_message2.png",
+        "pic": -1,
+        "jumpUrl": "http://23242342",
+        "isHeader": false,
+        "isAffiliate": true
+      },
+      {
+        "id": 3,
+        "title": "通知公告消息3",
+        "content": "消息3",
+        "picUrl": "https://screenshot-1258218961.cos.ap-guangzhou.myqcloud.com/notify_message2.png",
+        "pic": -1,
+        "jumpUrl": "http://23242342",
+        "isHeader": false,
+        "isAffiliate": true
+      }
+    ],
+    "time": 1567499185000,
+    "name": "通知公告",
+    "iconUrl": "https://screenshot-1258218961.cos.ap-guangzhou.myqcloud.com/icon_notify.png",
+    "icon": -1,
+    "type": 1
+  },
+  {
+    "id": 2,
+    "child": [
+      {
+        "id": 1,
+        "title": "个人消息1",
+        "content": "消息1",
+        "picUrl": "https://screenshot-1258218961.cos.ap-guangzhou.myqcloud.com/personal_message1.png",
+        "pic": -1,
+        "jumpUrl": "http://23242342",
+        "isHeader": true,
+        "isAffiliate": false
+      },
+      {
+        "id": 2,
+        "title": "个人消息2",
+        "content": "消息2",
+        "picUrl": "https://screenshot-1258218961.cos.ap-guangzhou.myqcloud.com/personal_message2.png",
+        "pic": -1,
+        "jumpUrl": "http://23242342",
+        "isHeader": false,
+        "isAffiliate": true
+      }
+    ],
+    "time": 1567562768000,
+    "name": "个人消息",
+    "iconUrl": "https://screenshot-1258218961.cos.ap-guangzhou.myqcloud.com/icon_message.png",
+    "icon": -1,
+    "type": 2
+  }
+]

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.view.flowlayout.FlowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="申请人如有异议，可自收到本通知之日起六十日内向"
+        android:textSize="@dimen/text_size_first" />
+
+   <!-- <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:hint="（行政区域）"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人民政府复议委员会或"
+        android:singleLine="false"
+        android:textSize="@dimen/text_size_first" />
+    <!-- <EditText
+      android:layout_width="50dp"
+      android:layout_height="wrap_content"
+      android:hint="（行政区域）"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请新增复议，或者六个月依法向佛山市顺德区人民法院提起行政诉讼。"
+        android:singleLine="false"
+        android:textSize="@dimen/text_size_first" />
+</com.zhy.view.flowlayout.FlowLayout>
+

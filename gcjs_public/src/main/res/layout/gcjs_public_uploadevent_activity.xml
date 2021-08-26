@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleText="补全信息"/>
+
+
+    <com.augurit.agmobile.agwater5.gcjs_public.common.view.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:padding="@dimen/padding_5"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/light_gray"/>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/view_divider_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="0dp"
+            android:background="@color/agmobile_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_pre"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/agmobile_button_height"
+                android:layout_weight="1"
+                android:background="@drawable/weui_bg_btn_plain_primary"
+                android:text="上一步"
+                android:textColor="@drawable/weui_bg_btn_primary_text_normal"
+                android:textSize="@dimen/agmobile_text_body"
+                android:visibility="visible"
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/agmobile_divider"/>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/agmobile_button_height"
+                android:layout_weight="1"
+                android:background="@drawable/gcjs_approval_btn_gradient"
+                android:text="保存并进入下一步"
+                android:textColor="@drawable/weui_bg_btn_primary_text_normal"
+                android:textSize="@dimen/agmobile_text_body"
+                android:visibility="visible"
+                />
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/agmobile_button_height"
+                android:layout_weight="1"
+                android:background="@drawable/gcjs_approval_btn_gradient"
+                android:text="发起申报"
+                android:textColor="@drawable/weui_bg_btn_primary_text_normal"
+                android:textSize="@dimen/agmobile_text_body"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

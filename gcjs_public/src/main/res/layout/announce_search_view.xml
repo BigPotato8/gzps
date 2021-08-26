@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_5"
+            android:layout_weight="1"
+            android:background="@drawable/corner_color_write"
+            android:hint="申报流水号"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="30dp"
+            android:paddingLeft="10dp"
+            android:textColor="#5B5B5B"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_search1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_weight="1"
+            android:background="@drawable/corner_color_write"
+            android:hint="项目/工程名称"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="30dp"
+            android:paddingLeft="@dimen/padding_10"
+            android:textColor="#5B5B5B"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/gcjs_ic_search"/>
+
+    </LinearLayout>
+
+    <!--&lt;!&ndash;标题&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--style="@style/PartTitleContainer"-->
+    <!--android:background="@color/white">-->
+
+    <!--<View style="@style/PartTitleDecoration" />-->
+
+    <!--<TextView-->
+    <!--style="@style/PartTitleText"-->
+    <!--android:text="查询结果" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

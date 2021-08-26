@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/agmobile_primary"
+        android:clickable="true" >
+        <!--返回按钮-->
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@mipmap/back_arrow"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message_back"
+                android:clickable="false"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/mine_everyday_sign"
+            android:textColor="@color/agmobile_white"
+            android:textSize="@dimen/text_size_first" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="preMonth"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:src="@mipmap/arr_left" />
+
+            <TextView
+                android:id="@+id/year_month_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-12"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="nextMonth"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:src="@mipmap/arr_right" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/agmobile_white">
+
+        <Button
+            android:id="@+id/btn_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_shape_time_stamp"
+            android:text="@string/mine_item_sign"
+            android:textColor="@color/agmobile_white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

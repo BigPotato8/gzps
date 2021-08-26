@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <!--标题-->
+    <LinearLayout
+        style="@style/PartTitleContainer"
+        android:background="@null">
+
+        <View style="@style/PartTitleDecoration"/>
+
+        <TextView
+            android:id="@+id/tv_indicatetor_name"
+            style="@style/PartTitleText"
+            android:text=""/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

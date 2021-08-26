@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/agmobile_background">
+
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:titleText="个人信息"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/agmobile_bg_list_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/title_bar">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textColor="#353535"
+                android:textSize="16sp"/>
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:src="@mipmap/avatar_person_default"
+                app:sriv_right_top_corner_radius="5dp"
+                app:sriv_left_top_corner_radius="5dp"
+                app:sriv_left_bottom_corner_radius="5dp"
+                app:sriv_right_bottom_corner_radius="5dp"/>
+
+        </LinearLayout>
+
+    <com.augurit.agmobile.common.view.widget.WEUICell
+        android:id="@+id/cell_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canNav="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_avatar"
+        app:name="姓名">
+
+    </com.augurit.agmobile.common.view.widget.WEUICell>
+
+    <com.augurit.agmobile.common.view.widget.WEUICell
+        android:id="@+id/cell_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canNav="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cell_name"
+        app:name="账号">
+
+    </com.augurit.agmobile.common.view.widget.WEUICell>
+
+    <com.augurit.agmobile.common.view.widget.WEUICell
+        android:id="@+id/cell_org"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canNav="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cell_account"
+        app:name="部门">
+
+    </com.augurit.agmobile.common.view.widget.WEUICell>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_login_div"
+    tools:context=".SewageMainActivity">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="应急调度登录"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:text="Please login first" />
+
+        <EditText
+            android:id="@+id/accountEt"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/shape_et_bg_login_div"
+            android:ems="20"
+            android:hint="请输入您的用户名"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textSize="15sp">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/pwdEt"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/shape_et_bg_login_div"
+            android:ems="20"
+            android:hint="请输入您的密码"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/subBtn"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_button_div"
+            android:text="登录"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

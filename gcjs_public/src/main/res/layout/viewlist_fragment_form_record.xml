@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/agmobile_surface">
+
+    <LinearLayout
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/agmobile_boundary_spacing_horizontal"
+        android:layout_marginRight="@dimen/agmobile_boundary_spacing_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/viewlist_bg_btn_dashed"
+        android:layerType="software">
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/cv_ic_add"
+            android:tint="@color/agmobile_primary"/>
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:textColor="@drawable/weui_bg_btn_plain_stroke_text"
+            tools:text="@string/sewerage_button_add_well"/>
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            tools:text="@string/sewerage_text_no_data"/>
+    </LinearLayout>
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_add">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/btn_add_floating"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/agmobile_boundary_spacing_vertical"
+        android:layout_marginEnd="@dimen/agmobile_boundary_spacing_horizontal"
+        android:background="@drawable/bg_floating_button"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_add_floating"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/ic_add"/>
+    </LinearLayout>
+</RelativeLayout>

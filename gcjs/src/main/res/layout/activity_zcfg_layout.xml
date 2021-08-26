@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/agmobile_background">
+
+    <com.augurit.agmobile.busi.bpm.view.view.SearchTitleBar
+        android:id="@+id/search_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></com.augurit.agmobile.busi.bpm.view.view.SearchTitleBar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_title_bar">
+
+    </android.support.design.widget.TabLayout>
+
+    <include
+        android:id="@+id/view_net_error"
+        layout="@layout/view_error_bar"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:visibility="gone"
+        android:layout_below="@+id/search_title_bar"
+        tools:visibility="visible" />
+
+    <com.augurit.agmobile.common.view.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout">
+
+    </com.augurit.agmobile.common.view.widget.NoScrollViewPager>
+
+
+</RelativeLayout>
+

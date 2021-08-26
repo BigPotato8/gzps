@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
+    <link href="js/bootstrap.min14ed.css" rel="stylesheet"/>
+    <link href="js/bootstrap-table.min.css" rel="stylesheet">
+    <link href="js/layer.css" rel="stylesheet" type="text/css"/>
+    <link href="js/bootstrap-datetimepicker.css" rel="stylesheet"/>
+
+    <style>
+		.col-sm-cous{
+			padding-right:0px;text-align:right;padding-top: 5px;margin-bottom:5px
+		}
+		/**滚动狂样式*/
+		::-webkit-scrollbar-thumb{background-color:#999;}
+		::-webkit-scrollbar{width:5px;background-color:#F5F5F5;}
+		.layui-layer-btn{
+			background: #eee;
+		}
+		th,td{
+			vertical-align: middle!important;
+			font-size: 12px;
+		}
+		.panel {
+			 margin-bottom: 0px;
+
+		}
+		.panel-body {
+			padding: 10px;
+			padding-bottom: 0px;
+		}
+		#table{
+			border:1px solid #e4eaec;
+
+		}
+		#tabTitle{
+			margin-left: 250px;
+			font-weight:bold
+		}
+		.def{
+			background: #F5FFFA
+		}
+
+
+    </style>
+</head>
+<body>
+<div class="col-sm-12 mainwrapper" style="
+    padding-left: 10px;
+    padding-right: 10px;">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form" id="myform">
+                <div class="form-group">
+                    <input name="type1" style="width:50px;margin-top:8px" checked type="radio"
+                           value="维管单位"
+                           onclick="wgdwDate()"/><label style="margin-left: -15px">维管单位</label>
+
+                    <input type="radio" name="type1" value='镇街'
+                           style="width:50px;margin-left: 10px;margin-top:8px"
+                           onclick="zjDate()"/><label style="margin-left: -15px">镇街单位</label>
+
+
+                    <button type="button" id="btn_query1" style="margin-left: 10px;"
+                            class="btn btn-primary"
+                            onclick="search();">查询
+                    </button>
+                    <button type="button" style="margin-left: 10px;" id="btn_query2"
+                            class="btn btn-default"
+                            onclick="resets();">重置
+                    </button>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-sm-1"
+                           style="margin-left:5px;width: 90px;margin-top:8px">查询日期:</label>
+                    <div class="col-sm-1">
+                        <input type="text"  style="margin-left:-10px;width:100px" class="form-control" id="timeDefine" name="timeDefine"
+                               onchange="defineDate()"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <label class="col-sm-1"
+                           style="margin-left:5px;width: 90px;margin-top:8px">查询范围:</label>
+                    <div class="col-sm-1">
+                        <input type="text" style="margin-left:-10px;width:100px"
+                               class="form-control" id="startTime"
+                               name="startTime"  disabled="disabled"/>
+                    </div>
+                    <div class="col-sm-1" style="margin-left: 65px;margin-top:5px;width:20px;">——
+                    </div>
+
+                    <div class="col-sm-1">
+                        <input type="text" style="margin-left: 0px;width:100px"
+                               class="form-control" id="endTime"
+                               name="endTime"  disabled="disabled"/>
+                    </div>
+
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!--<div class="panel panel-default def">-->
+    <!--<div class="panel-body">-->
+    <!--<div id="tabTitle"></div>-->
+    <!--</div>-->
+    <!--<div id="toolbar" class="btn-group" style="margin-top: -5px;width: 400px">-->
+    <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+    <!--&lt;!&ndash;<label class="col-sm-3 control-label col-sm-cous" >导出时间</label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-sm-4" >&ndash;&gt;-->
+    <!--&lt;!&ndash;<input type="text" class="form-control" id="exportTime" name="rwxdnf"  />&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--</div>-->
+    <table id="table"></table>
+    <!--</div>-->
+</div>
+</body>
+<script src="js/jquery.min.js?v=1.0.0"></script>
+<script src="js/bootstrap.min.js?v=3.3.6"></script>
+<script src="js/bootstrap-table.js"></script>
+<script src="js/bootstrap-table-zh-CN.min.js" charset="UTF-8"></script>
+<script src="js/util_date.js" type="text/javascript"></script>
+<script src="js/layer.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="js/checkReachStanderList.js"></script>
+</html>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e9f3">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/back_arrow_515151" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/ll_source"
+            android:layout_toRightOf="@+id/iv_back"
+            app:tabIndicatorColor="@color/colorPadBlue"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#575962"
+            app:tabTextAppearance="@style/TabLayoutStyle"
+            app:tabTextColor="#575962" />
+
+        <LinearLayout
+            android:id="@+id/ll_source"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:layout_toLeftOf="@+id/ll_status"
+            android:background="@drawable/bg_event_detail_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_source_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_event_detail_label_blue"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="来源"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_source_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="        "
+                android:textColor="@color/colorPadBlue" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/bg_event_detail_green"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_status_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_event_detail_label_green"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="状态"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_status_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="        "
+                android:textColor="@color/colorPadGreen" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content_pad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:elevation="@dimen/dp_4"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:gravity="center_vertical"
+            android:text="项目名称"
+            android:textColor="#FF575962"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            >
+
+            <Button
+                android:id="@+id/btn_deal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="处理"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_event_detail_btn_blue"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btn_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="预审通过"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_event_detail_btn_blue"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btn_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="24dp"
+                android:text="不予受理"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_event_detail_btn_red"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

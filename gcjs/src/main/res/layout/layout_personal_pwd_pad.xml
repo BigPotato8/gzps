@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/agmobile_grey_0" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_pwd_original"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="请输入原密码：" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_pwd_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="请输入新密码：" />
+
+    <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText2
+        android:id="@+id/pe_pwd_new_pwd_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:textViewName="请再次输入新密码：" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/agmobile_grey_0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_btn_filter_reset"
+            android:text="取消"
+            android:textColor="#535353"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_btn_filter_confirm"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

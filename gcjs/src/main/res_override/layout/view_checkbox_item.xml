@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:gravity="center"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/checkbox_item_bg_normal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/iv_icon"
+            android:textSize="12sp"
+            android:gravity="center"
+            tools:text="haha"/>
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@id/tv_name"
+            android:layout_alignBottom="@id/tv_name"
+            tools:src="@mipmap/common_ic_close_gray"/>
+
+        <LinearLayout
+            android:id="@+id/view_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_selected"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_selected" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

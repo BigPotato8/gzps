@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:id="@+id/ll_info_item"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_info_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="15sp"
+            android:text="你有一条【大胶带的骄傲的骄傲】项目待办接的近似解答" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-13dp"
+            android:layout_marginTop="-7dp"
+            android:baselineAligned="false"
+            android:src="@drawable/icon_new" />
+
+        <TextView
+            android:textColor="#A5A1A1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2021-03-12 12:33"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/WidgetDividerStyle"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp" />
+</LinearLayout>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/agmobile_background">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleText="@string/settings_menu_about">
+
+
+    </com.augurit.agmobile.common.view.navigation.TitleBar>
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/agmobile_text_body"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/gl_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Agmobile 5.0"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="137dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/tv_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@mipmap/login_logo_agmobile"/>
+
+    <com.augurit.agmobile.common.view.widget.WEUICell
+        android:id="@+id/cell_check_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gl_menu"
+        app:name="@string/about_menu_check_update"
+        app:isTop="true"
+        app:isBottom="true"
+        app:canNav="true">
+
+    </com.augurit.agmobile.common.view.widget.WEUICell>
+
+    <TextView
+        android:id="@+id/tv_copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/about_caption_copyright_development"
+        android:textColor="#999999"
+        android:textSize="@dimen/agmobile_text_caption"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

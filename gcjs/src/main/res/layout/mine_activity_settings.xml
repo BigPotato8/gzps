@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/agmobile_background"
+    android:orientation="vertical">
+
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:titleText="@string/mine_item_setting">
+
+    </com.augurit.agmobile.common.view.navigation.TitleBar>
+
+    <com.augurit.agmobile.common.view.widget.WEUICell
+        android:id="@+id/cell_my_org"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:canNav="true"
+        app:isBottom="true"
+        app:isTop="true"
+        app:name="@string/settings_menu_my_org">
+
+    </com.augurit.agmobile.common.view.widget.WEUICell>
+
+    <com.augurit.agmobile.common.view.widget.WEUICell
+        android:id="@+id/cell_skin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:canNav="true"
+        app:isBottom="true"
+        app:isTop="true"
+        app:name="@string/settings_menu_skin">
+
+    </com.augurit.agmobile.common.view.widget.WEUICell>
+
+    <com.augurit.agmobile.common.view.widget.WEUICell
+        android:id="@+id/cell_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canNav="true"
+        app:isBottom="true"
+        app:isTop="false"
+        app:name="@string/settings_menu_about">
+
+    </com.augurit.agmobile.common.view.widget.WEUICell>
+</LinearLayout>

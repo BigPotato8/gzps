@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/agmobile_surface"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/agmobile_surface"
+            >
+            <TextView
+                android:id="@+id/tv_apply_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/agmobile_black"
+                android:textStyle="bold"
+                android:text="申请表"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/agmobile_primary"
+                    android:layout_marginRight="6dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目/工程信息"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/agmobile_black"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_local_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="项目代码"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_central_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="工程代码"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                android:id="@+id/pe_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:textViewName="项目/工程名称"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_theme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="所属主题"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="立项类型"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                android:id="@+id/pe_project_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:textViewName="建设地点"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_regionalism"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="行政区划"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_financialSource"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="资金来源"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_isForeign"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="是否外资"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_investType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="投资类型"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_landSource"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="土地来源"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_isAreaEstimate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="是否完成区域评估"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_isDesignSolution"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="是否带设计方案"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_projNature"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="建设性质"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_projCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="工程分类"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_nstartTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="拟开工时间"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_endTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="拟建成日期"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_investSum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="总投资（万元）"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_projScope"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="单体跨度"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_BuildingArea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="建筑面积（㎡）"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_LandArea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="用地面积（㎡）"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_projLevel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="重点项目"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_theIndustry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="国标行业"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_gbCodeYear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="国标行业代码发布年代"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                android:id="@+id/pe_project_scaleContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:textViewName="建设规模及内容"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/agmobile_primary"
+                    android:layout_marginRight="6dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申报主体"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/agmobile_black"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_apply_units"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/agmobile_primary"
+                    android:layout_marginRight="6dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结果物签收方式"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/agmobile_black"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_receiveMode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="纸质结果物签收方式"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_receiveType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="领取方式"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_addresseeName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="收件人姓名"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_addresseePhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="收件人手机号码"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_addresseeIdcardType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:textViewName="收件人证件类型"
+                    />
+
+                <com.augurit.agmobile.agwater5.gcjspad.widget.PadEditText
+                    android:id="@+id/pe_project_addresseeIdcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:textViewName="收件人证件号"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

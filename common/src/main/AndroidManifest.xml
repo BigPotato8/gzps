@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.augurit.common">
+
+
+    <application>
+
+        <activity
+            android:name="com.augurit.common.mine.SelfProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.augurit.common.mine.sign.view.SignActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.augurit.common.mine.SkinSettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.augurit.common.mine.AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.augurit.common.mine.MyOrgActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.augurit.common.mine.SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.augurit.common.statistics.view.NewStatisticsActivity"
+            android:screenOrientation="portrait"/>
+
+
+
+    </application>
+</manifest>

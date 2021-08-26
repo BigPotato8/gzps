@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:text="梁村镇大成岗幼儿园（FS-2011-440605122-01-03-000175）"
+            android:textColor="#FF3F4047"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="30dp"
+            android:text="申报流水号 2019091921354736" />
+
+        <TextView
+            android:id="@+id/tv_apply_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_project_name"
+            android:layout_alignLeft="@+id/tv_project_name"
+            android:layout_marginTop="6dp"
+            android:background="#f2f3f8"
+            android:padding="2dp"
+            android:text="并联申报"
+            android:textColor="#98ABC7"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_stage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_project_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/tv_apply_type"
+            android:background="#f2f3f8"
+            android:padding="2dp"
+            android:text="工程建设许可阶段"
+            android:textColor="#98ABC7"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_apply_type"
+            android:layout_alignLeft="@+id/tv_project_name"
+            android:layout_marginTop="4dp"
+            android:text="事项名称 事项名称事项名称事项名称事项名称"
+            android:textColor="#FF7F8590"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_unit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_name"
+            android:layout_alignLeft="@+id/tv_project_name"
+            android:layout_marginTop="4dp"
+            android:text="建设单位 佛山市南海区大沥镇沙溪"
+            android:textColor="#FF7F8590"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view_driver"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_unit_name"
+            android:layout_marginTop="8dp"
+            android:background="#FFDCDFE6" />
+
+        <TextView
+            android:id="@+id/tv_apply_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_driver"
+            android:layout_alignLeft="@+id/tv_project_name"
+            android:layout_marginTop="8dp"
+            android:text="申报时间 2020-02-10 12:00"
+            android:textColor="#FF7F8590"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_promise_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_driver"
+            android:layout_toRightOf="@+id/tv_apply_time"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:text="承诺办结时间 2020-02-10 12:00"
+            android:textColor="#FF7F8590"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_time_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_driver"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="8dp"
+            android:text="逾期1工作日"
+            android:textColor="#FF7F8590"
+            android:textSize="14sp" />
+
+        <skin.support.widget.SkinCompatProgressBar
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_time_describe"
+            android:layout_alignBottom="@+id/tv_time_describe"
+            android:layout_below="@+id/view_driver"
+            android:layout_toLeftOf="@+id/tv_time_describe"
+            android:layout_marginRight="10dp"
+            android:max="100"
+            android:progress="70"
+            style="?android:attr/progressBarStyleHorizontal"
+
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

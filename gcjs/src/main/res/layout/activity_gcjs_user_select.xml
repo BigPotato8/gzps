@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.augurit.agmobile.common.view.navigation.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:canBack="true"
+        app:layout_constraintBottom_toTopOf="@+id/view_net_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleText="选择转发人"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_user_select"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/agmobile_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/weui_bg_btn_plain"
+            android:text="取消"
+            android:textColor="@drawable/weui_bg_btn_default_text_normal"
+            android:textSize="@dimen/agmobile_text_body"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/agmobile_divider" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/agmobile_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/weui_bg_btn_plain_primary"
+            android:text="确定"
+            android:textColor="@drawable/weui_bg_btn_primary_text_normal"
+            android:textSize="@dimen/agmobile_text_body"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>

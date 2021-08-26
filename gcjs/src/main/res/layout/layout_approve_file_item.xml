@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+    <ImageView
+        android:id="@+id/iv_file_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/ic_annex" />
+
+    <TextView
+        android:id="@+id/tv_filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="name"
+        android:textColor="@color/agmobile_black"
+        android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_vector_delete"
+        android:tint="@color/btn_red"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        />
+</LinearLayout>

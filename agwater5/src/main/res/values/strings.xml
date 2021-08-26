@@ -1,0 +1,446 @@
+<resources>
+    <!--<string name="app_name">agwater</string>-->
+
+    <string name="search_bar_hint">搜索应用、新闻、资料</string>
+
+    <!--————————菜单—————————-->
+
+    <!--底栏-->
+    <string name="menu_im">即时通讯</string>
+    <string name="menu_drainage">排水巡检</string>
+    <string name="menu_psh">排水户</string>
+    <string name="menu_shizheng">市政</string>
+    <string name="menu_nanning">南宁</string>
+    <string name="menu_pipeline">管网养护</string>
+    <string name="menu_sewage">农污巡检</string>
+    <string name="menu_flood">应急调度</string>
+    <string name="menu_mine">我的</string>
+    <string name="menu_role">用户</string>
+
+    <!--防汛应急-->
+    <string name="menu_monitor">在线监测</string>
+    <string name="menu_flood_dispatch">防汛调度</string>
+    <string name="menu_work">日常工作</string>
+    <string name="menu_emergency">应急指挥</string>
+    <string name="flood_emergency_problem">应急问题</string>
+    <string name="flood_duty_management">值班管理</string>
+    <string name="flood_emergency_newproblem">新增应急</string>
+    <string name="flood_emergency_materials">防涝物资库</string>
+    <string name="flood_emergency_location">积水点:%s</string>
+    <string name="flood_emergency_order">上报指令:%s</string>
+    <string name="flood_emergency_disposeer">处理人:%s</string>
+    <string name="flood_emergency_disposetime">处理时间:%s</string>
+    <string name="flood_emergency_uploader">上报人:%s</string>
+    <string name="flood_emergency_uploadtime">上报时间:%s</string>
+    <string name="flood_supervise_report_db">事中报告</string>
+    <string name="flood_supervise_reserve_end">结束预案</string>
+    <string name="flood_supervise_municipal_end">结束市级</string>
+    <string name="flood_supervise_report_create">生成事中</string>
+
+    <!--即时通讯-->
+    <string name="conversation">会话</string>
+    <string name="friend_list">通讯录</string>
+    <string name="work_list">工作组</string>
+    <string name="im_no_friends">暂无好友</string>
+    <string name="im_no_teams">暂未加入群组</string>
+
+    <!--统计-->
+    <string name="search_statistic">摸查统计</string>
+    <string name="install_statistic">安装统计</string>
+    <string name="report_statistics">上报统计</string>
+    <string name="sign_statistic">签到统计</string>
+    <string name="statistic_app_title">APP安装率统计</string>
+    <string name="statistic_first_man">一线人员统计</string>
+    <string name="statistic_manager">管理层统计</string>
+    <string name="statistic_total">总人数</string>
+    <string name="statistic_installed">已安装</string>
+    <string name="statistic_unInstalled">未安装</string>
+    <string name="statistic_position">职务：</string>
+    <string name="statistic_tel">电话：</string>
+    <string name="statistic_organization">机构：</string>
+    <string name="statistic_report">数据上报统计</string>
+    <string name="statistic_device_type">设施类型</string>
+    <string name="statistic_times">统计时段</string>
+    <string name="statistic_to">至</string>
+    <string name="statistic_confirm">确定时段</string>
+    <string name="statistic_today">今天</string>
+    <string name="statistic_yesterday">昨天</string>
+    <string name="statistic_report_state">今日和昨日全市数据上报情况</string>
+    <string name="statistic_sign">签到统计</string>
+    <string name="statistic_signs_today">今日签到人数</string>
+    <string name="statistic_signs_yesterday">昨日签到人数</string>
+
+    <!--巡检-->
+    <string name="menu_todo">待办事项</string>
+    <string name="menu_done">已办事项</string>
+    <string name="menu_finish">办结事项</string>
+    <string name="menu_submitted">我的提交</string>
+
+    <string name="menu_more">更多</string>
+
+    <string name="menu_problem_report">问题上报</string>
+    <string name="menu_data_report">数据上报</string>
+    <string name="menu_new_data_report">数据新增</string>
+    <string name="menu_correct_data_report">核准上报</string>
+    <string name="menu_my_data_list">我的数据上报</string>
+    <string name="menu_data_new">数据新增-校核</string>
+    <string name="menu_data_only_new">数据新增</string>
+    <string name="menu_data_repair">数据修补测</string>
+    <string name="menu_feedback">交办反馈</string>
+    <string name="menu_pipe">管道养护</string>
+    <string name="menu_sewerage_user">排水户</string>
+    <string name="menu_connection_well">接驳井</string>
+    <string name="menu_door_no">门牌</string>
+    <string name="menu_analyse">统计</string>
+    <string name="menu_draft">本地草稿</string>
+    <string name="menu_patrol">巡检轨迹</string>
+    <string name="menu_patrol_history">轨迹记录</string>
+    <string name="menu_patrol_log">巡检日志</string>
+    <string name="menu_my_patrol_data">我的巡检日志</string>
+    <string name="menu_patrol_upload">日常巡检日志上报</string>
+
+    <string name="menu_examination">监督考核</string>
+    <string name="menu_pipelines">管网运行图</string>
+    <string name="menu_navigation">地图导航</string>
+    <string name="menu_inspect">日常巡检</string>
+
+    <!--专栏-->
+    <string name="menu_news">新闻动态</string>
+    <string name="menu_announcement">通知公告</string>
+    <string name="menu_communication">经验交流</string>
+    <string name="menu_laws">政策法规</string>
+    <string name="menu_board">红黑榜</string>
+    <string name="menu_help">操作须知</string>
+    <string name="menu_transaction">事务公开</string>
+    <string name="menu_examination_public">考核公开</string>
+    <string name="menu_patrol_public">巡检公开</string>
+    <string name="menu_device_state">设施状态</string>
+    <string name="menu_shizheng_12345">12345</string>
+    <string name="menu_shizheng_digit">数字城管</string>
+    <string name="menu_shizheng_street_lamp">路灯上报</string>
+    <string name="menu_shizheng_trace">日常巡检</string>
+    <string name="menu_query_facility">设施查询</string>
+    <string name="menu_mining">挖掘占用</string>
+    <string name="menu_special_patrol_upload">专项巡检</string>
+    <!--上报概览-->
+    <string name="review_new">新增</string>
+    <string name="review_check">校核</string>
+    <string name="review_total">总数</string>
+    <string name="review_no_audit">未审核</string>
+    <string name="review_doubt">存在疑问</string>
+    <string name="review_pass">审核通过</string>
+
+    <!--防汛调度-->
+    <string name="menu_emergency_messages">应急消息</string>
+    <string name="menu_emergency_report">应急上报</string>
+    <string name="menu_problem_report_dispatch">问题上报</string>
+    <string name="menu_report_history">上报记录</string>
+    <string name="menu_command_work">指挥工作</string>
+    <string name="menu_emergency_project">应急预案库</string>
+    <string name="menu_flood_expert">防涝专家</string>
+    <string name="menu_storage">物资储备库</string>
+    <string name="menu_weather_forecast">气象预报</string>
+    <string name="menu_weather_alert">气象预警</string>
+    <string name="menu_radar">雷达图</string>
+    <string name="menu_satellite_image">卫星云图</string>
+    <string name="menu_ready_todo">待办事项</string>
+    <string name="menu_have_done">已办事项</string>
+    <string name="menu_have_finished">办结事项</string>
+    <string name="menu_upload_record">上报记录</string>
+    <string name="bpm_upload_treated">已处理</string>
+    <string name="bpm_upload_untreated">未处理</string>
+
+    <string name="bpm_history_tag_local">未提交</string>
+
+    <!--日常工作-->
+    <string name="menu_data_browse">资料浏览</string>
+    <string name="menu_daily_report">工作日报</string>
+    <string name="menu_car_request">车辆申请</string>
+    <string name="menu_meeting_room_request">会议室申请</string>
+    <string name="menu_meeting">会议</string>
+    <string name="menu_subscription">订阅报表</string>
+    <string name="menu_receipt">回执确认</string>
+    <string name="menu_punch_card">考勤打卡</string>
+    <string name="menu_scheduling">排班查看</string>
+    <string name="menu_attendance_info">考勤信息</string>
+    <string name="menu_attendance_statistics">考勤统计</string>
+    <string name="menu_official_document_info">公文查询</string>
+    <string name="menu_send_document">发文单</string>
+    <string name="menu_receive_document">收文单</string>
+    <string name="menu_flow_reqeust">流程申请</string>
+    <string name="menu_history_report">调度历史</string>
+    <string name="menu_prevent_waterlogging_store">防涝物资库</string>
+    <string name="menu_flow_todo">流程待办</string>
+    <string name="menu_knowledge">知识信息</string>
+    <string name="menu_test_library">题库</string>
+    <string name="menu_test">培训考试</string>
+
+    <!--————————功能分区标题—————————-->
+    <string name="part_title_dynamic">巡检动态</string>
+    <string name="part_title_column">专栏</string>
+    <string name="part_title_report_glance">上报概览</string>
+    <string name="part_title_flood_emergency">防涝应急</string>
+    <string name="part_title_weather">气象信息</string>
+    <string name="part_title_work">业务办公</string>
+    <string name="part_title_attendance">考勤</string>
+    <string name="part_title_official_document">公文</string>
+    <string name="part_title_workflow">流程</string>
+    <string name="part_title_resources">资源</string>
+
+    <string name="button_detail">详情</string>
+
+    <!--————————我的—————————-->
+    <string name="settings_menu_about">关于AGMobile</string>
+    <string name="settings_menu_my_org">我的单位</string>
+    <string name="settings_menu_skin">个性换肤</string>
+    <string name="settings_skin_default">清新蓝</string>
+    <string name="settings_skin_green">环保绿</string>
+    <string name="settings_skin_night">夜间</string>
+    <string name="about_menu_check_update">检查更新</string>
+    <string name="about_caption_copyright">©2018 移动应用研发部</string>
+    <string name="about_caption_copyright_development">©2018 研发中心移动应用研发部</string>
+
+    <!--————————在线监测—————————-->
+    <string name="monitor_part_title_map">地图显示</string>
+    <string name="monitor_part_title_devices">设备分类</string>
+    <string name="monitor_part_title_layer">设施地图</string>
+    <string name="monitor_map_shiliang">矢量底图</string>
+    <string name="monitor_map_dem">地貌晕渲图</string>
+    <string name="monitor_map_yingxiang">影像底图</string>
+    <string name="flood_hydrops_issue">积水信息发布</string>
+
+    <!--————————提示信息—————————-->
+    <string name="message_load_failed">加载失败</string>
+    <string name="message_monitor_load_failed">监测数据失败</string>
+    <string name="message_problem_select_assignee">请选择处理人</string>
+    <string name="message_under_construction">功能建设中</string>
+    <string name="message_loading">加载中</string>
+    <string name="message_back">返回</string>
+
+    <!--————————排水巡检—————————-->
+    <string name="drainage_state_handling">处理中</string>
+    <string name="drainage_state_finished">已办结</string>
+
+    <!--————————数据上报—————————-->
+    <string name="drainage_my_upload_list">上报列表</string>
+    <string name="drainage_sjsb_add_new">数据新增</string>
+    <string name="drainage_sjsb_correct">数据校核</string>
+    <string name="drainage_sjsb_my_new">我的数据</string>
+    <string name="drainage_sjsb_my_correct">我的校核</string>
+    <string name="drainage_sjsb_upload_detail">上报详情</string>
+    <string name="drainage_sjsb_correct_detail">校核详情</string>
+    <string name="drainage_sjsb_upload_info">上报信息</string>
+    <string name="drainage_sjsb_upload_orgin">原设施信息</string>
+    <string name="drainage_sjsb_upload_audit">审核意见</string>
+    <!--————————巡检日志—————————-->
+    <string name="drainage_my_dialy_detail">巡检日志详情</string>
+
+    <!--数据修补测-->
+    <string name="data_repair_add">我的新增</string>
+    <string name="data_repair_correct">我的修正</string>
+
+    <!--————————事务公开—————————-->
+    <string name="public_affair_title_event_list">问题上报</string>
+    <string name="public_affair_title_facility_list">数据上报</string>
+    <string name="public_affair_title_patrol_list">巡检日志</string>
+
+    <!--————————问题上报、工作流—————————-->
+    <string name="event_title_source">问题来源</string>
+    <string name="event_title_source_detail">问题来源详情</string>
+    <string name="event_title_process">处理情况</string>
+    <string name="event_title_advice">管理层意见</string>
+    <string name="event_title_add_advice">填写管理层意见</string>
+    <string name="event_title_detail">事件详情</string>
+    <string name="event_title_work_journal">施工日志</string>
+    <string name="event_text_isbyself">已自行处理</string>
+    <string name="event_text_no_advice">暂无意见</string>
+    <string name="event_text_next_assignee">下一环节处理人</string>
+    <string name="event_hint_input_advice">请填写意见</string>
+    <string name="event_button_edit">编辑问题</string>
+    <string name="event_button_delete">删除任务</string>
+    <string name="event_button_detail">查看详情</string>
+    <string name="event_button_sign">领取</string>
+    <string name="event_button_rollback">回退</string>
+    <string name="event_button_retrieve">撤回</string>
+    <string name="event_button_reassign">转派</string>
+    <string name="event_button_assign">派发任务</string>
+    <string name="event_button_submit">提交</string>
+    <string name="event_button_journal">填写日志</string>
+    <string name="event_button_finish_work">完成施工</string>
+    <string name="event_button_advice">填写意见</string>
+    <string name="event_text_nextlink">推送到下一环节</string>
+    <string name="event_text_add_journal">填写施工日志</string>
+
+
+    <!--排水户上报-->
+    <string name="menu_psh_upload">排水户上报</string>
+    <string name="menu_psh_dialypatrol">巡检日志</string>
+    <string name="menu_well_upload">接驳井上报</string>
+    <string name="my_well_upload">我的接驳井上报</string>
+    <string name="my_well_upload_detail">上报详情</string>
+    <string name="sewerage_title_table">广州市排水户信息表</string>
+    <string name="sewerage_title_table_base_info">基本情况</string>
+    <string name="sewerage_title_table_types">行业类别</string>
+    <string name="sewerage_title_table_connection_status">接驳情况</string>
+    <string name="sewerage_title_table_process_detail">预处理设施</string>
+    <string name="sewerage_title_table_well">接驳井</string>
+    <string name="sewerage_title_doorno">门牌信息</string>
+    <string name="sewerage_button_add_well">添加接驳井</string>
+    <string name="sewerage_text_no_data">暂无数据</string>
+    <string name="sewerage_button_uninvest">未调查</string>
+    <string name="sewerage_button_finish_invest">完成调查</string>
+    <string name="sewerage_text_well_problems">井存在问题：</string>
+    <string name="sewerage_text_drain_problems">排水存在问题：</string>
+    <string name="sewerage_message_submit">本排水户信息将提交为待审核，是否继续？</string>
+    <string name="sewerage_message_save">本排水户信息将存为草稿，是否继续？</string>
+    <string name="sewerage_psh_name">排水户名称</string>
+    <string name="sewerage_psh_address">地址</string>
+    <string name="sewerage_psh_bh">上报编号</string>
+
+
+    <string name="well_my_upload_detail">上报详情</string>
+    <string name="menu_door_no_upload">门牌上报</string>
+    <string name="my_door_no_upload">我的门牌上报</string>
+    <!--————————排水户事务公开—————————-->
+    <string name="psh_public_affair_title_event_list">问题上报列表</string>
+    <string name="psh_public_affair_title_facility_list">排水户列表</string>
+    <string name="psh_public_affair_title_patrol_list">巡检日志</string>
+
+    <!--我的页面-->
+    <string name="mine_item_sign">签到</string>
+    <string name="mine_item_collection">收藏</string>
+    <string name="mine_item_backlog">待办</string>
+    <string name="mine_item_envelopes">红包</string>
+    <string name="mine_item_setting">设置</string>
+    <string name="mine_item_exit">退出</string>
+    <string name="mine_everyday_sign">每日签到</string>
+
+    <!--表单-->
+    <string name="form_now_the_photo">现场照片</string>
+    <string name="form_select_facility_problem">选择设施或问题地点</string>
+    <string name="form_problem_position">问题地点</string>
+    <string name="form_problem_position_fill">请填写问题地点</string>
+    <string name="form_problem_road">问题道路</string>
+    <string name="form_problem_road_fill">请填写问题道路</string>
+    <string name="form_facility_type">设施类型</string>
+    <string name="form_problem_type">问题类型</string>
+    <string name="form_report_time">上报时间</string>
+    <string name="form_emergency_degree">紧急程度</string>
+    <string name="form_problem_des">问题描述</string>
+    <string name="form_problem_des_fill">请填写问题描述</string>
+    <string name="form_do_by_oneself">自行处理</string>
+    <string name="form_do_description">处理描述</string>
+    <string name="form_do_description_fill">请填写处理描述</string>
+    <string name="form_start_time">开始时间</string>
+    <string name="form_end_time">结束时间</string>
+    <string name="form_list_number">已挂牌编号</string>
+    <string name="form_fuzzy_query">支持模糊匹配，不超过10个字符</string>
+    <string name="form_road">路段</string>
+    <string name="form_address">地址</string>
+    <string name="form_upload_number">上报编号</string>
+    <string name="form_time">时间</string>
+    <string name="form_problem_name">问题名称</string>
+    <string name="form_problem_do_or_not">是否已处理</string>
+    <string name="form_acc_name">积水点名称</string>
+    <string name="form_acc_depth">积水深度</string>
+    <string name="form_report_unit">上报单位</string>
+    <string name="form_report_person">上报人</string>
+    <string name="form_check_state">审核状态</string>
+    <string name="form_facility_position">设施位置</string>
+    <string name="form_inlet">窨井类型</string>
+    <string name="form_rain_pollution_category">雨污类别</string>
+    <string name="form_manhole_material">井盖材质</string>
+    <string name="form_feature">特征</string>
+    <string name="form_form">形式</string>
+    <string name="form_emissions_to">排放去向</string>
+    <string name="form_ownership_units">权属单位</string>
+    <string name="form_manage_state">管理状态</string>
+    <string name="form_facility_problem">设施问题</string>
+    <string name="form_report_instructions">上报说明</string>
+    <string name="form_owner_unit">业主单位</string>
+    <string name="form_last_modified_time">最后修改时间</string>
+    <string name="form_add_photo3">至少添加3张照片</string>
+    <string name="form_check_type">核准类型</string>
+    <string name="form_facility_name">设施名字</string>
+    <string name="form_team_member">班组成员</string>
+    <string name="form_drainage_name">排水户名称</string>
+    <string name="form_own_to_town">所属镇(街)</string>
+    <string name="form_door_number">门牌号</string>
+    <string name="form_water_use">月用水量(吨)</string>
+    <string name="form_detail_address">详细地址</string>
+    <string name="form_owner_name">产权人姓名</string>
+    <string name="form_own_tel">产权人联系电话</string>
+    <string name="form_legal_name">经营人(法人)姓名</string>
+    <string name="form_legal_phone">经营人(法人)联系电话</string>
+    <string name="form_business_license">工商营业执照</string>
+    <string name="form_credit_code">统一社会信用代码</string>
+    <string name="form_approval_of_connection">接驳意见核准书</string>
+    <string name="form_discharge_permit">排水许可证</string>
+    <string name="form_license_code">许可证编码</string>
+    <string name="form_pollutant_discharging_license">排污许可证</string>
+    <string name="form_pollutant_discharging_type">污水类别</string>
+    <string name="form_unit_type">单位类型</string>
+    <string name="form_pipe_type">管类别</string>
+    <string name="form_connection_manhole">所连接驳井</string>
+    <string name="form_manhole_type">井类别</string>
+    <string name="form_manhole_problem">井存在问题</string>
+    <string name="form_drainage_problem">排水存在问题</string>
+    <string name="form_oil_separator">隔油池</string>
+    <string name="form_operation_state">运行情况</string>
+    <string name="form_maintain_or_not">是否进行养护</string>
+    <string name="form_maintenance_record">养护记录及台账</string>
+    <string name="form_grid">格栅</string>
+    <string name="form_settling_basin">沉淀池</string>
+    <string name="form_other_pretreatment_facilities">其他预处理设施</string>
+    <string name="form_administrative_region">行政区</string>
+    <string name="form_town">鎮街</string>
+    <string name="form_village">村（居委會）</string>
+    <string name="form_street_road_alley">街路巷</string>
+    <string name="form_report_type">上报类型</string>
+
+
+    <!--路径-->
+    <string name="form_route_start">开始</string>
+    <string name="form_route_stop">暂停</string>
+    <string name="form_route_continue">继续</string>
+    <string name="form_route_stopped">已暂停</string>
+    <string name="form_route_start_record_routes">开始记录运动轨迹</string>
+    <string name="form_route_stop_record_routes">停止记录运动轨迹</string>
+
+    <!--其他-->
+    <string name="other_confirm">确定</string>
+    <string name="other_cancel">取消</string>
+    <string name="other_reedit">重新编辑</string>
+    <string name="other_edit">编辑</string>
+    <string name="other_delete">删除</string>
+    <string name="other_report_information">上报信息</string>
+    <string name="other_audit_opinion">审核意见</string>
+    <string name="other_facility_information">原设施信息</string>
+    <string name="other_no_audit_opinion">当前没有审核意见</string>
+    <!--市政-->
+    <string-array name="array_roles">
+        <item>所长</item>
+        <item>组长</item>
+        <item>巡检员</item>
+    </string-array>
+
+
+    <!--————————南宁功能分区标题—————————-->
+    <string name="part_title_project">设施</string>
+    <string name="part_title_problem">问题</string>
+    <string name="part_title_lin_river">临河</string>
+    <string name="part_title_river">河道</string>
+    <string name="device_daypotra_list">巡检记录</string>
+    <string name="device_daypotra_draft_list">巡检草稿</string>
+    <string name="device_list">设施列表</string>
+    <string name="menu_river_report">河道上报</string>
+    <string name="menu_problem_list">上报记录</string>
+    <string name="menu_clock">打卡</string>
+    <string name="menu_linriver_potral">项目监督</string>
+    <string name="menu_linriver_record">督查记录</string>
+    <string name="menu_linriver_draft">监督草稿</string>
+    <string name="menu_river_potral_record">巡检记录</string>
+    <string name="menu_river_problem_report">问题上报</string>
+    <string name="menu_patrol_river_upload">河道巡查</string>
+    <string name="bpm_sms_info_menu_assignees_selected_ellipsize">等%1$d区</string>
+</resources>

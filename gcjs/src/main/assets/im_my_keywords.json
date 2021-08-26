@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "type": "web",
+    "keyword": "工程建设",
+    "activityClass": "com.augurit.agmobile.agwater5.gcjs.eventlist.view.EventApprovalActivity",
+    "data": "{\"APPLYINST_CODE\":\"2019042117387344\",\"APPLYINST_SOURCE\":\"win\",\"APPLY_TIME\":\"2019-04-21 17:38\",\"APPLY_TYPE\":\"0\",\"BUSRECORDID\":\"undefined\",\"CREATE_TIME_\":\"2019-04-21 17:38\",\"DUE_NUM\":4,\"IS_SERIES_APPROVE\":\"并联\",\"ITEMINST_STAGE_NAME\":\"施工图联合审查\",\"ITEM_PROPERTY\":\"undefined\",\"LINKMAN_NAME\":\"漆黑烈焰使\",\"NAME_\":\"联合审查\",\"PROJ_NAME\":\"滦南金惠嘉园住宅小区建设工程\",\"START_TIME\":\"2019-04-21 17:38\",\"TASK_ID\":\"4131130\"}"
+  },
+  {
+    "id": 2,
+    "keyword": "批文批复",
+    "activityClass": "com.augurit.agmobile.agwater5.gcjs.eventlist.view.PwpfAddActivity",
+    "data": "{\"APPLYINST_CODE\":\"2019042117387344\",\"APPLYINST_SOURCE\":\"win\",\"APPLY_TIME\":\"2019-04-21 17:38\",\"APPLY_TYPE\":\"0\",\"BUSRECORDID\":\"undefined\",\"CREATE_TIME_\":\"2019-04-21 17:38\",\"DUE_NUM\":4,\"IS_SERIES_APPROVE\":\"并联\",\"ITEMINST_STAGE_NAME\":\"施工图联合审查\",\"ITEM_PROPERTY\":\"undefined\",\"LINKMAN_NAME\":\"漆黑烈焰使\",\"NAME_\":\"联合审查\",\"PROJ_NAME\":\"滦南金惠嘉园住宅小区建设工程\",\"START_TIME\":\"2019-04-21 17:38\",\"TASK_ID\":\"4131130\"}"
+  },
+  {
+    "id": 2,
+    "keyword": "办事指南",
+    "activityClass": "com.augurit.agmobile.agwater5.gcjs.common.webview.WebViewActivity"
+  }
+]

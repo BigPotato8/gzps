@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/agmobile_blue"/>
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="（环保）东莞市因工程建设需要拆除、改动、迁移污水处理设施审核事项实施告知承诺制审批操作细则"
+            android:textSize="@dimen/sp_16"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/mine_right_arrow"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:background="@color/light_gray"/>
+</LinearLayout>

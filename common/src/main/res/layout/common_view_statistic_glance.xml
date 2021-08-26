@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:textColor="@color/agmobile_text_body"
+        android:textSize="@dimen/agmobile_text_title"
+        tools:text="新增"/>
+
+    <LinearLayout
+        android:id="@+id/ll_content_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_key_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/agmobile_text_body"
+            android:textSize="@dimen/agmobile_text_caption"
+            tools:text="总数"/>
+
+        <TextView
+            android:id="@+id/tv_value_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/agmobile_text_body"
+            android:textSize="20sp"
+            tools:text="110"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_key_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#259B24"
+            android:textSize="@dimen/agmobile_text_caption"
+            tools:text="总数"/>
+
+        <TextView
+            android:id="@+id/tv_value_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#259B24"
+            android:textSize="20sp"
+            tools:text="110"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_key_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FF9800"
+            android:textSize="@dimen/agmobile_text_caption"
+            tools:text="总数"/>
+
+        <TextView
+            android:id="@+id/tv_value_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF9800"
+            android:textSize="20sp"
+            tools:text="110"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_key_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FF4081"
+            android:textSize="@dimen/agmobile_text_caption"
+            tools:text="总数"/>
+
+        <TextView
+            android:id="@+id/tv_value_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF4081"
+            android:textSize="20sp"
+            tools:text="110"/>
+    </LinearLayout>
+</LinearLayout>

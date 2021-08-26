@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 其他筛选条件在这里插入-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="3dp"
+            android:paddingLeft="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_examine_fun_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:text="办结任务"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@color/light_gray" />
+        </LinearLayout>
+        <!--任务列表recycleview-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/rl_page_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/agmobile_surface"
+            android:elevation="4dp"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_list_index_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="第1-5条/总共20条"
+                android:textColor="@color/agmobile_black"
+                android:textSize="@dimen/sp_14" />
+
+            <com.augurit.agmobile.agwater5.gcjspad.widget.PageControlView
+                android:id="@+id/pc_page_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="跳至"
+                android:textColor="@color/agmobile_black"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/et_jump_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_shape_edit"
+                android:gravity="center"
+                android:inputType="number"
+                android:minWidth="40dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/agmobile_black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="页"
+                android:textColor="@color/agmobile_black"
+                android:textSize="@dimen/sp_14" />
+
+            <com.augurit.agmobile.common.view.widget.WEUIButton
+                android:id="@+id/btn_jump_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="3dp"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="3dp"
+                app:backgroundNormal="@drawable/bg_shape_confirm_btn"
+                app:buttonType="primary"
+                app:text="确定"
+                app:textNormal="@color/agmobile_surface"
+                app:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

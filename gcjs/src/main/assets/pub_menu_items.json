@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "办事指南",
+    "data": {
+      "menuInvokeUrl": "cp-rest/rest/html5/guide/list"
+    },
+    "children": [],
+    "pubId": "pub_id_1"
+  },
+  {
+    "id": 2,
+    "name": "政策",
+    "data": {},
+    "children": [
+      {
+        "id": 21,
+        "name": "政策文件",
+        "data": {
+          "menuInvokeUrl": "sub_title21"
+        },
+        "children": [],
+        "pubId": "pub_id_21"
+      },
+      {
+        "id": 22,
+        "name": "政策法规",
+        "data": {
+          "menuInvokeUrl": "sub_title22"
+        },
+        "children": [],
+        "pubId": "pub_id_22"
+      },
+      {
+        "id": 23,
+        "name": "改革流程图",
+        "data": {
+          "menuInvokeUrl": "sub_title23"
+        },
+        "children": [],
+        "pubId": "pub_id_23"
+      }
+    ],
+    "pubId": "pub_id_2"
+  },
+  {
+    "id": 3,
+    "name": "办件统计",
+    "data": {},
+    "children": [],
+    "pubId": "pub_id_3"
+  }
+]

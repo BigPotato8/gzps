@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/agmobile_primary"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/btn_more"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/cv_bg_btn_top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/gcjs_ic_wode"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+<!--    搜索框-->
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/common_bg_search_input"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/gcjs_ic_search"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/iv_search"
+            android:text="@string/search_bar_hint"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/agmobile_text_body_sub"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1">
+        <TextView
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/main_head_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:text="@string/main_head_title"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textSize="@dimen/suggestion_body_text_size"/>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_scan"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/cv_bg_btn_top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_scan"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_notice"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/cv_bg_btn_top"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_notice1"/>
+        <ImageView
+            android:id="@+id/iv_notice_num"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

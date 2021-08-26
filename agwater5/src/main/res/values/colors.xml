@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tab_text_normal">#9e9e9e</color>
+    <color name="tab_text_selected">@color/agmobile_primary</color>
+
+    <color name="dust_grey">#414141</color>
+    <color name="dark_blue">#2391ed</color>
+    <color name="deep_blue">#5050c7</color>
+    <color name="black">#000000</color>
+
+    <color name="common_head_item_selected">#441dd3de</color>
+    <color name="common_head_item_normal">@color/agmobile_surface</color>
+
+    <color name="drainage_head_item_1">#3ac7d3</color>
+    <color name="drainage_head_item_2">#76c87b</color>
+    <color name="drainage_head_item_3">#1A95F8</color>
+    <color name="white">#ffffff</color>
+
+    <color name="dark_gray_light">#a0a0a0</color>
+
+    <!--==============我的上报列表============-->
+    <color name="drainage_head_item_total">#000</color>
+    <color name="drainage_head_item_pass">#3EA500</color>
+    <color name="drainage_head_item_doubt">#FFFFC248</color>
+    <color name="drainage_head_item_no">#ff5050</color>
+
+
+    <color name="tangelo">#f64b00</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <!--轨迹列表分割线颜色-->
+    <color name="trace_list_divider_color">#EFEFEF</color>
+ <!--   <color name="work_station_list_divider_color">#e8e8e8</color>-->
+
+    <!--污水管字体颜色-->
+    <color name="sewerage_pipe">#e60000</color>
+    <!--雨水管字体颜色-->
+    <color name="rain_pipe">#54e719</color>
+    <!--雨污合流的字体颜色-->
+    <color name="rain_sewerage_pipe">#b487d8</color>
+
+    <color name="primary_background_color">#F1F2F5</color>
+
+    <!--已安装字体的颜色-->
+    <color name="color_already_installed">#3EA500</color>
+
+    <color name="agpatrol_blue">#2196f3</color>
+    <color name="invisible_state_text_color">#707070</color>
+</resources>

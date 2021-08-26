@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/agmobile_bg_list_item">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_time_line"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.14"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_time_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94"/>
+    <FrameLayout
+        android:id="@+id/view_time_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/agmobile_all_spacing_horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingTop="2dp"
+        app:layout_constraintStart_toEndOf="@id/gl_time_line"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_process_node_bg"
+            android:layout_gravity="center"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/bg_process_btn_blue"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_process_node_bg_two"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_process_btn_blue"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_node_white" />
+
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/view_time_line_top"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@drawable/widget_bg_timeline_line_normal"
+        android:layerType="software"
+        app:layout_constraintBottom_toTopOf="@id/view_time_point"
+        app:layout_constraintEnd_toEndOf="@id/view_time_point"
+        app:layout_constraintStart_toStartOf="@id/view_time_point"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/view_time_line_bottom"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@drawable/widget_bg_timeline_line_normal"
+        android:layerType="software"
+        app:layout_constraintBottom_toBottomOf="@id/ll_content"
+        app:layout_constraintEnd_toEndOf="@id/view_time_point"
+        app:layout_constraintStart_toStartOf="@id/view_time_point"
+        app:layout_constraintTop_toBottomOf="@id/view_time_point"/>
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/view_time_point"
+        app:layout_constraintEnd_toStartOf="@id/view_time_point"
+        app:layout_constraintTop_toTopOf="@id/view_time_point">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/agmobile_text_caption"
+            android:textSize="14sp"
+            tools:text="07-09"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/agmobile_text_caption"
+            android:textSize="12sp"
+            tools:text="15:29"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/approval_ic_phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/agmobile_primary"
+                android:textSize="@dimen/sp_16"
+                tools:text="已完成"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/agmobile_all_spacing_horizontal"
+        android:layout_marginTop="5dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:id="@+id/tv_node"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/view_time_point"
+        app:layout_constraintEnd_toStartOf="@+id/gl_time_line1"
+        app:layout_constraintRight_toLeftOf="@+id/gl_time_line1"
+        app:layout_constraintStart_toEndOf="@id/view_time_point"
+        app:layout_constraintTop_toTopOf="@id/view_time_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:id="@+id/tv_process_repair"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="#fff"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/bg_process_repair"
+            android:text="补"/>
+        <TextView
+            android:id="@+id/tv_process_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_bg_timeline_title_selected"
+            android:padding="6dp"
+            tools:text="巡查组问题上报巡查组问题报"
+            android:textColor="@color/agmobile_text_title_bar"
+            android:textSize="16sp"/>
+<!--            android:textSize="@dimen/agmobile_text_body1"-->
+
+<!--            / />-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/agmobile_bg_card"
+        android:minHeight="50dp"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingRight="@dimen/agmobile_all_spacing_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_node"
+        app:layout_constraintTop_toBottomOf="@id/tv_node">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:textColor="@color/agmobile_text_body"
+                    android:textSize="@dimen/agmobile_text_body_sub"
+                    tools:text="系统管理员"/>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_response"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_response"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_dialogue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:textColor="#575962"
+                    android:textSize="14sp"
+                    tools:text="水西路苏元山东南194米附近，发现井盖损坏等问题。"/>
+
+                <ImageView
+                    android:id="@+id/iv_triangle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="-3dp"
+                    android:src="@drawable/triangle_up" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/agmobile_text_body"
+                android:textSize="@dimen/agmobile_text_body"
+                tools:text="水西路苏元山东南194米附近，发现井盖损坏等问题。"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/agmobile_text_caption"
+                android:textSize="@dimen/agmobile_text_caption"
+                tools:text="黄浦区-水务局-水务设施管理所-督查组长"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/agmobile_text_body"
+            android:textSize="@dimen/agmobile_text_body"
+            tools:text="水西路苏元山东南194米附近，发现井盖损坏等问题。"/>
+
+        <com.augurit.agmobile.common.view.imagepicker.view.BGASortableNinePhotoLayout
+            android:id="@+id/photo_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+            app:bga_snpl_deleteDrawableOverlapQuarter="false"
+            app:bga_snpl_editable="false"
+            app:bga_snpl_itemCornerRadius="0dp"
+            app:bga_snpl_itemSpanCount="5"
+            app:bga_snpl_itemWhiteSpacing="4dp"
+            app:bga_snpl_itemWidth="80dp"
+            app:bga_snpl_maxItemCount="9"
+            app:bga_snpl_otherWhiteSpacing="0dp"
+            app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
+            app:bga_snpl_plusDrawable="@mipmap/bga_pp_ic_plus"
+            app:bga_snpl_plusEnable="false"
+            app:bga_snpl_sortable="true">
+
+        </com.augurit.agmobile.common.view.imagepicker.view.BGASortableNinePhotoLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_next_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/agmobile_divider"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/event_text_next_assignee"
+                android:textColor="@color/agmobile_text_body"
+                android:textSize="@dimen/agmobile_text_body_sub"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_next_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:textColor="@color/agmobile_text_body"
+                    android:textSize="@dimen/agmobile_text_body_sub"
+                    android:textStyle="bold"
+                    tools:text="系统管理员"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_next_phone"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/approval_ic_phone"/>
+
+                    <TextView
+                        android:id="@+id/tv_next_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/agmobile_primary"
+                        android:textSize="@dimen/agmobile_text_caption"
+                        tools:text="337845818"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--日志视图-->
+<!--        <com.augurit.agmobile.agwater5.sewage.enentlist.view.EventJournalView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"-->
+<!--            tools:visibility="visible">-->
+<!--        </com.augurit.agmobile.agwater5.sewage.enentlist.view.EventJournalView>-->
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

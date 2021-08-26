@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="6dp">
+    <com.augurit.agmobile.agwater5.im.work.PublicItemNewsView
+        android:id="@+id/public_item_news_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</android.support.v7.widget.CardView>

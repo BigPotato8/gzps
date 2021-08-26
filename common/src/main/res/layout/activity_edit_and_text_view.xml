@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:justifyContent="flex_start"
+    app:alignItems="center"
+    app:flexWrap="wrap"
+    android:id="@+id/ff_edit_text">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#ff0000"-->
+<!--            android:text="我没打没我没打没动"/>-->
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@null"-->
+<!--            android:enabled="false"-->
+<!--            android:textColor="#000"-->
+<!--            android:text="我没打没我没打没我没打"/>-->
+<!--    </LinearLayout  >-->
+<!--    <EditText-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@null"-->
+<!--        android:enabled="false"-->
+<!--        android:textColor="#000"-->
+<!--        android:text="我没打没我没打没我没打"/>-->
+</com.google.android.flexbox.FlexboxLayout>

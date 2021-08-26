@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/view_pager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/identify_candidate_item_height"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent">-->
+        <!--</android.support.v4.view.ViewPager>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_candidate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/identify_candidate_item_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/identify_candidate_item_height"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/identify_ic_arrow_next"
+                android:rotation="180"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/identify_candidate_item_height"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/identify_ic_arrow_next" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/agmobile_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:descendantFocusability="blocksDescendants">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_attributes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"/>
+        <!--计入底部按钮栏高-->
+    </RelativeLayout>
+
+</LinearLayout>
